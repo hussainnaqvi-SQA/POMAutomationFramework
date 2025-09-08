@@ -1,0 +1,70 @@
+package com.automation.utils;
+
+import org.testng.annotations.DataProvider;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
+
+public class CSVDataProvider {
+
+    public static Object[][] loadCSV(String fileName) throws IOException {
+        String filePath = System.getProperty("user.dir") + "/src/test/resources/testdata/" + fileName;
+        List<Map<String, String>> data = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String headerLine = br.readLine();
+            if (headerLine == null) {
+                throw new RuntimeException("CSV file is empty: " + filePath);
+            }
+            String[] headers = headerLine.split(",");
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",");
+                Map<String, String> row = new LinkedHashMap<>();
+                for (int i = 0; i < headers.length; i++) {
+                    row.put(headers[i].trim(), (i < parts.length) ? parts[i].trim() : "");
+                }
+                data.add(row);
+            }
+        }
+
+        // TestNG requires Object[][]. Each row will have 1 Map<String,String>.
+        Object[][] providerData = new Object[data.size()][1];
+        for (int i = 0; i < data.size(); i++) {
+            providerData[i][0] = data.get(i);
+        }
+
+        return providerData;
+    }
+
+    @DataProvider(name = "loginData")
+    public static Object[][] getLoginData() throws IOException {
+        return loadCSV("LoginData.csv");
+    }
+
+    @DataProvider(name = "negativeLoginData")
+    public static Object[][] getNegativeLoginData() throws IOException {
+        return loadCSV("NegativeLoginData.csv");
+    }
+    @DataProvider(name = "InvalidEmails")
+    public static Object[][] InvalidEmails() throws IOException {
+        return loadCSV("InvalidEmails.csv");
+    }
+    @DataProvider(name = "InvalidPhoneNumber")
+    public static Object[][] InvalidPhoneNumber() throws IOException {
+        return loadCSV("InvalidPhoneNumber.csv");
+    }
+    @DataProvider(name = "InvalidPasswords")
+    public static Object[][] InvalidPasswords() throws IOException {
+        return loadCSV("InvalidPasswords.csv");
+    }
+
+    // 🔑 Add more CSVs easily in the future:
+    // @DataProvider(name = "signupData")
+    // public static Object[][] getSignupData() throws IOException {
+    //     return loadCSV("SignupData.csv");
+    // }
+}

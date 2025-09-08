@@ -1,0 +1,31 @@
+public boolean isDisplayed(By locator, ExtentTest extentTest) {
+    try {
+        boolean visible = waitForVisible(locator, 15).isDisplayed();
+        String message = "Element " + locator + " is displayed: " + visible;
+        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), message);
+        if (extentTest != null) extentTest.pass("✅ " + message);
+        return visible;
+    } catch (TimeoutException | NoSuchElementException e) {
+        String message = "❌ Element " + locator + " is NOT displayed";
+        LoggerUtil.logError(LoggerUtil.getLogger(getClass()), message);
+        if (extentTest != null) extentTest.fail(message);
+        return false;
+    }
+}
+
+public boolean validateText(By locator, String expectedText, ExtentTest extentTest) {
+    String actualText = getText(locator, extentTest);
+
+    if (extentTest != null) {
+        extentTest.info("Fetched text: " + actualText);
+        extentTest.info("[Validation] Expected: " + expectedText + " | Actual: " + actualText);
+    }
+
+    boolean match = actualText.equals(expectedText);
+    if (match) {
+        if (extentTest != null) extentTest.pass("✅ Validation passed: " + actualText);
+    } else {
+        if (extentTest != null) extentTest.fail("❌ Validation failed: Expected [" + expectedText + "], but got [" + actualText + "]");
+    }
+    return match;
+}

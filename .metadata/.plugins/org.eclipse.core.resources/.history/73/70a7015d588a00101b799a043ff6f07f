@@ -1,0 +1,29 @@
+email,phone,password
+# --- Invalid Emails ---
+invalidemail.com,,Test@123
+.david@yopmail.com,,Test@123
+david.@yopmail.com,,Test@123
+david@.yopmail.com,,Test@123
+david..green@yopmail.com,,Test@123
+-david@yopmail.com,,Test@123
+.@yopmail.com,,Test@123
+david@yopmail,,Test@123
+david@.com,,Test@123
+david@green..com,,Test@123
+DAVID@YOPMAIL..COM,,Test@123
+
+# --- Invalid Phones ---
+,12345,Test@123
+,1234567890123,Test@123
+,abcdefghij,Test@123
+,$%*&^%$%^^,Test@123
+,12345abcde,Test@123
+,٠١٢٣٤٥٦٧٨٩,Test@123
+,١٢٣١٢٣١٢٣١,Test@123
+
+# --- Password Policy Violations (already had, keeping them) ---
+qtestor@yopmail.com,1231231231,short1A@      # Too short
+qtestor@yopmail.com,1231231231,nouppercase1@ # Missing uppercase
+qtestor@yopmail.com,1231231231,NOLOWERCASE1@ # Missing lowercase
+qtestor@yopmail.com,1231231231,NoSpecial123  # Missing special character
+qtestor@yopmail.com,1231231231,NoNumber@     # Missing number

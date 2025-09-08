@@ -1,0 +1,32 @@
+package com.automation.utils;
+
+import com.automation.reports.ExtentTestManager;
+import com.aventstack.extentreports.ExtentTest;
+import org.testng.Assert;
+
+public class AssertUtils {
+
+    public static void assertTrue(boolean condition, String message, ExtentTest extentTest) {
+        try {
+            Assert.assertTrue(condition, message);
+            // Do NOT log "Test Passed" here, BasePage already does it with details
+        } catch (AssertionError e) {
+            if (extentTest != null) {
+                extentTest.fail("❌ Assertion failed: " + message);
+            }
+            throw e;
+        }
+    }
+
+    public static void assertEquals(String actual, String expected, String message, ExtentTest extentTest) {
+        try {
+            Assert.assertEquals(actual, expected, message);
+            // Same here — no duplicate "Passed" log
+        } catch (AssertionError e) {
+            if (extentTest != null) {
+                extentTest.fail("❌ Assertion failed: " + message + " | Expected: " + expected + " but got: " + actual);
+            }
+            throw e;
+        }
+    }
+}

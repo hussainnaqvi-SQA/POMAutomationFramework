@@ -1,2 +1,1 @@
-# AutomationFramework
-# AutomationFramework
+# POMAutomationFramework

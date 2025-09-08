@@ -1,0 +1,52 @@
+package com.automation.utils;
+
+import org.testng.annotations.DataProvider;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
+
+public class CSVDataProvider {
+
+    public static Object[][] loadCSV(String fileName) throws IOException {
+        String filePath = System.getProperty("user.dir") + "/src/test/resources/testdata/" + fileName;
+        List<Object[]> data = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String headerLine = br.readLine();
+            if (headerLine == null) {
+                throw new RuntimeException("CSV file is empty: " + filePath);
+            }
+            String[] headers = headerLine.split(",");
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",");
+                Object[] row = new Object[headers.length];
+                for (int i = 0; i < headers.length; i++) {
+                    row[i] = (i < parts.length) ? parts[i].trim() : null;
+                }
+                data.add(row);
+            }
+        }
+
+        return data.toArray(new Object[0][0]);
+    }
+
+    @DataProvider(name = "loginData")
+    public static Object[][] getLoginData() throws IOException {
+        return loadCSV("LoginData.csv");
+    }
+
+    @DataProvider(name = "negativeLoginData")
+    public static Object[][] getNegativeLoginData() throws IOException {
+        return loadCSV("NegativeLoginData.csv");
+    }
+
+    // 🔑 Add more CSVs easily in the future:
+    // @DataProvider(name = "signupData")
+    // public static Object[][] getSignupData() throws IOException {
+    //     return loadCSV("SignupData.csv");
+    // }
+}

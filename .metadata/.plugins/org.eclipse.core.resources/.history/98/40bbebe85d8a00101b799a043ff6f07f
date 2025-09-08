@@ -1,0 +1,112 @@
+package com.automation.base;
+
+import com.automation.utils.DriverManager;
+import com.automation.utils.LoggerUtil;
+import com.aventstack.extentreports.ExtentTest;
+
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+import io.appium.java_client.touch.offset.PointOption;
+import io.appium.java_client.android.AndroidDriver;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+public class BasePage {
+
+	
+    protected AppiumDriver driver() {
+        return DriverManager.getDriver();
+    }
+
+    // --- Wait helpers ---
+    private WebElement waitForVisible(By locator, int seconds) {
+        return new WebDriverWait(driver(), Duration.ofSeconds(seconds))
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    private WebElement waitForPresence(By locator, int seconds) {
+        return new WebDriverWait(driver(), Duration.ofSeconds(seconds))
+                .until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    // --- Action methods ---
+    public void click(By locator, ExtentTest extentTest) {
+        WebElement el = waitForVisible(locator, 15);
+        el.click();
+        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Clicked on element: " + locator);
+        if (extentTest != null) extentTest.info("Clicked: " + locator);
+    }
+
+    public void type(By locator, String text, ExtentTest extentTest) {
+        WebElement el = waitForVisible(locator, 15);
+        el.clear();
+        el.sendKeys(text);
+        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Typed text '" + text + "' into element: " + locator);
+        if (extentTest != null) extentTest.info("Typed into " + locator + " -> " + text);
+    }
+
+    public String getText(By locator) {
+        WebElement el = waitForVisible(locator, 15);
+        String text = el.getText();
+        if (text == null || text.trim().isEmpty()) {
+            text = el.getAttribute("content-desc");
+        }
+        text = (text != null ? text.trim() : "");
+        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Fetched text from element [" + locator + "]: " + text);
+        
+        return text;
+    }
+
+    public boolean isDisplayed(By locator, ExtentTest extentTest) {
+        try {
+            boolean visible = waitForVisible(locator, 15).isDisplayed();
+            String message = "Element " + locator + " is displayed: " + visible;
+            LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), message);
+            if (extentTest != null) extentTest.info("✅ " + message);
+            return visible;
+        } catch (TimeoutException | NoSuchElementException e) {
+            String message = "❌ Element " + locator + " is NOT displayed";
+            LoggerUtil.logError(LoggerUtil.getLogger(getClass()), message);
+            if (extentTest != null) extentTest.fail(message);
+            return false;
+        }
+    }
+
+    public String getValidationText(By locator, ExtentTest extentTest) {
+        return getText(locator); // already logs "Fetched text"
+    }
+
+
+    // --- Mobile utilities ---
+    public void pressEnter(ExtentTest extentTest) {
+        ((AndroidDriver) driver()).pressKey(new KeyEvent(AndroidKey.ENTER));
+        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Pressed Enter key");
+        if (extentTest != null) extentTest.info("Pressed Enter");
+    }
+
+    
+
+    public void scrollToText(String text, ExtentTest extentTest) {
+        try {
+            driver().findElement(
+                AppiumBy.androidUIAutomator(
+                    "new UiScrollable(new UiSelector().scrollable(true))"
+                  + ".scrollTextIntoView(\"" + text + "\")"
+                )
+            );
+            LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Scrolled to text: " + text);
+            if (extentTest != null) extentTest.info("Scrolled to: " + text);
+        } catch (Exception e) {
+            LoggerUtil.logError(LoggerUtil.getLogger(getClass()), "Failed to scroll to text: " + text);
+            if (extentTest != null) extentTest.info("Failed to scroll to: " + text);
+        }
+    }
+}

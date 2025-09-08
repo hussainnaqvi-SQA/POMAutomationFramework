@@ -1,0 +1,38 @@
+package com.automation.utils;
+
+import com.automation.reports.ExtentTestManager;
+import com.aventstack.extentreports.ExtentTest;
+import org.testng.Assert;
+
+public class AssertUtils {
+
+    public static void assertTrue(boolean condition, String message) {
+    	
+        ExtentTest test = ExtentTestManager.getTest();
+        
+        if (!condition) {
+            String screenshotPath = ScreenshotUtils.captureScreenshot(message.replace(" ", "_"));
+            if (test != null) {
+                test.fail("❌ " + message);
+                if (screenshotPath != null) {
+                    test.addScreenCaptureFromPath(screenshotPath);
+                }
+            }
+        }
+        Assert.assertTrue(condition, message); // ✅ ensures TestNG marks test as failed
+    }
+
+    public static void assertEquals(Object actual, Object expected, String message) {
+        ExtentTest test = ExtentTestManager.getTest();
+        if (!actual.equals(expected)) {
+            String screenshotPath = ScreenshotUtils.captureScreenshot(message.replace(" ", "_"));
+            if (test != null) {
+                test.fail("❌ " + message + " | Expected: " + expected + " but got: " + actual);
+                if (screenshotPath != null) {
+                    test.addScreenCaptureFromPath(screenshotPath);
+                }
+            }
+        }
+        Assert.assertEquals(actual, expected, message); // ✅ TestNG still fails
+    }
+}

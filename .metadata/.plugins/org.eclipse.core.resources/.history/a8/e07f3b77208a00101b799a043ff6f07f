@@ -1,0 +1,50 @@
+package com.automation.utils;
+
+import org.testng.annotations.DataProvider;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CSVDataProvider {
+
+    private static Object[][] loadCSV(String filePath) throws IOException {
+        List<Object[]> data = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            boolean firstLine = true;
+
+            while ((line = br.readLine()) != null) {
+                if (firstLine) {
+                    firstLine = false; // ✅ Skip header
+                    continue;
+                }
+                String[] parts = line.split(",");
+
+                // ✅ Trim each value to avoid spaces
+                for (int i = 0; i < parts.length; i++) {
+                    parts[i] = parts[i].trim();
+                }
+
+                // ✅ Add full row (any number of columns)
+                data.add(parts);
+            }
+        }
+        return data.toArray(new Object[0][0]);
+    }
+
+    @DataProvider(name = "loginData")
+    public static Object[][] getLoginData() throws IOException {
+        String filePath = System.getProperty("user.dir") + "/src/test/resources/testdata/LoginData.csv";
+        return loadCSV(filePath);
+    }
+
+    @DataProvider(name = "negativeLoginData")
+    public static Object[][] getNegativeLoginData() throws IOException {
+        String filePath = System.getProperty("user.dir") + "/src/test/resources/testdata/NegativeLoginData.csv";
+        return loadCSV(filePath);
+    }
+}

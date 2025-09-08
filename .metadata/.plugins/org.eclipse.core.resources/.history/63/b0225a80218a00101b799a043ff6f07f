@@ -1,0 +1,21 @@
+package com.automation.utils;
+
+import org.testng.Assert;
+
+public class AssertUtils {
+
+    public static void assertTrue(boolean condition, String message) {
+        if (!condition) {
+            ScreenshotUtils.captureScreenshot(message.replace(" ", "_"));
+        }
+        // ✅ No Extent logging here, just throw assertion
+        Assert.assertTrue(condition, message);
+    }
+
+    public static void assertEquals(Object actual, Object expected, String message) {
+        if (!actual.equals(expected)) {
+            ScreenshotUtils.captureScreenshot(message.replace(" ", "_"));
+        }
+        Assert.assertEquals(actual, expected, message);
+    }
+}

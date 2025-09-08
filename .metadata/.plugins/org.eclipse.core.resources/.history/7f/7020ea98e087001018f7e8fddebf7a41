@@ -1,0 +1,37 @@
+package com.automation.utils;
+
+import org.testng.annotations.DataProvider;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CSVDataProvider {
+
+    @DataProvider(name = "loginData")
+    public static Object[][] getLoginData() throws IOException {
+        String filePath = System.getProperty("user.dir") + "/src/test/resources/testdata/LoginData.csv";
+        List<Object[]> data = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            boolean firstLine = true;
+
+            while ((line = br.readLine()) != null) {
+                if (firstLine) { 
+                    firstLine = false; // skip header
+                    continue;
+                }
+                String[] parts = line.split(",");
+                if (parts.length >= 3) {
+                    data.add(new Object[]{parts[0].trim(), parts[1].trim(), parts[2].trim()});
+                } else {
+                    System.err.println("⚠️ Skipping malformed row in CSV: " + line);
+                }
+            }
+        }
+        return data.toArray(new Object[0][0]);
+    }
+}
