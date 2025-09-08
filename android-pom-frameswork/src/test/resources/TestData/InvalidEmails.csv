@@ -1,0 +1,13 @@
+email,password
+# --- Invalid Emails ---
+invalidemail.com,Test@123
+.david@yopmail.com,Test@123
+david.@yopmail.com,Test@123
+david@.yopmail.com,Test@123
+david..green@yopmail.com,Test@123
+-david@yopmail.com,Test@123
+.@yopmail.com,Test@123
+david@yopmail,Test@123
+david@.com,Test@123
+david@green..com,Test@123
+DAVID@YOPMAIL..COM,Test@123

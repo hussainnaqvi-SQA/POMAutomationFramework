@@ -1,0 +1,34 @@
+package com.automation.utils;
+
+import com.automation.reports.ExtentTestManager;
+import com.aventstack.extentreports.ExtentTest;
+import org.testng.Assert;
+
+public class AssertUtils {
+
+	public static void assertTrue(boolean condition, String message) {
+	    if (!condition) {
+	        LoggerUtil.logError(LoggerUtil.getLogger(AssertUtils.class), "❌ Assertion failed: " + message);
+	        Assert.fail("Assertion failed: " + message);
+	    } else {
+	        LoggerUtil.logPass(LoggerUtil.getLogger(AssertUtils.class), "✅ " + message);
+	    }
+	}
+
+	public static void assertEquals(String actual, String expected, String message, ExtentTest extentTest) {
+	    try {
+	        Assert.assertEquals(actual, expected, message);
+	        if (extentTest != null) {
+	            extentTest.info("Validation passed: " + message +
+	                            " | Expected: " + expected + " | Actual: " + actual);
+	        }
+	    } catch (AssertionError e) {
+	        if (extentTest != null) {
+	            extentTest.fail("❌ Assertion failed: " + message +
+	                            " | Expected: " + expected + " but got: " + actual);
+	        }
+	        throw e;
+	    }
+	}
+
+}

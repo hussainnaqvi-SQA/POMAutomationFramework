@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="9" total="15" passed="0" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-05T18:42:49 PKT" name="Default suite" finished-at="2025-09-05T18:45:57 PKT" duration-ms="188067">
+    <groups>
+      <group name="negative">
+        <method signature="LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" name="NegativeTest_LoginWithWrongCredential" class="com.automation.tests.LoginTests"/>
+      </group> <!-- negative -->
+      <group name="smoke">
+        <method signature="LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" name="NegativeTest_LoginWithWrongCredential" class="com.automation.tests.LoginTests"/>
+      </group> <!-- smoke -->
+      <group name="login">
+        <method signature="LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" name="NegativeTest_LoginWithWrongCredential" class="com.automation.tests.LoginTests"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2025-09-05T18:42:49 PKT" name="Default test" finished-at="2025-09-05T18:45:57 PKT" duration-ms="188067">
+      <class name="com.automation.tests.LoginTests">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:42:48 PKT" name="setupSuite" finished-at="2025-09-05T18:42:49 PKT" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:42:49 PKT" name="setupTest" finished-at="2025-09-05T18:42:54 PKT" duration-ms="5244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:42:54 PKT" name="initPage" finished-at="2025-09-05T18:42:54 PKT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:42:54 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-05T18:43:20 PKT" duration-ms="26108" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=qtestor@yopmail.com, phone=, password=WrongPass1!}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.automation.utils.AssertUtils.assertEquals(AssertUtils.java:20)
+at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:235)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeTest_LoginWithWrongCredential -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:43:20 PKT" name="tearDownTest" finished-at="2025-09-05T18:43:22 PKT" duration-ms="2237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:43:22 PKT" name="setupTest" finished-at="2025-09-05T18:43:25 PKT" duration-ms="3169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:43:25 PKT" name="initPage" finished-at="2025-09-05T18:43:25 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:43:25 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-05T18:43:51 PKT" duration-ms="25459" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=green@yopmail.com, phone=, password=Test@123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.automation.utils.AssertUtils.assertEquals(AssertUtils.java:20)
+at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:235)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeTest_LoginWithWrongCredential -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:43:51 PKT" name="tearDownTest" finished-at="2025-09-05T18:43:53 PKT" duration-ms="1850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:43:53 PKT" name="setupTest" finished-at="2025-09-05T18:43:56 PKT" duration-ms="3304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:43:56 PKT" name="initPage" finished-at="2025-09-05T18:43:56 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:43:56 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-05T18:44:22 PKT" duration-ms="25862" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=fakeuser@yopmail.com, phone=, password=abcd@123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.automation.utils.AssertUtils.assertEquals(AssertUtils.java:20)
+at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:235)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeTest_LoginWithWrongCredential -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:44:22 PKT" name="tearDownTest" finished-at="2025-09-05T18:44:24 PKT" duration-ms="1910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:44:24 PKT" name="setupTest" finished-at="2025-09-05T18:44:27 PKT" duration-ms="3254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:44:27 PKT" name="initPage" finished-at="2025-09-05T18:44:27 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:44:27 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-05T18:44:53 PKT" duration-ms="25947" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=, phone=1231231231, password=Test@123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.automation.utils.AssertUtils.assertEquals(AssertUtils.java:20)
+at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:235)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeTest_LoginWithWrongCredential -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:44:53 PKT" name="tearDownTest" finished-at="2025-09-05T18:44:55 PKT" duration-ms="1599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:44:55 PKT" name="setupTest" finished-at="2025-09-05T18:44:58 PKT" duration-ms="3206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:44:58 PKT" name="initPage" finished-at="2025-09-05T18:44:58 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:44:58 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-05T18:45:24 PKT" duration-ms="26108" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=, phone=1541235671, password=Test@123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.automation.utils.AssertUtils.assertEquals(AssertUtils.java:20)
+at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:235)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeTest_LoginWithWrongCredential -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:45:24 PKT" name="tearDownTest" finished-at="2025-09-05T18:45:26 PKT" duration-ms="1895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:45:26 PKT" name="setupTest" finished-at="2025-09-05T18:45:29 PKT" duration-ms="3440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:45:29 PKT" name="initPage" finished-at="2025-09-05T18:45:29 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:45:29 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-05T18:45:55 PKT" duration-ms="25485" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=, phone=7856125645, password=xyz@4312}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid Credentials Toast Validation expected [Incorrect password!] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.automation.utils.AssertUtils.assertEquals(AssertUtils.java:20)
+at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:235)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeTest_LoginWithWrongCredential -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:45:55 PKT" name="tearDownTest" finished-at="2025-09-05T18:45:57 PKT" duration-ms="1891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:com.automation.tests.LoginTests@47c4ecdc]" started-at="2025-09-05T18:45:57 PKT" name="tearDownSuite" finished-at="2025-09-05T18:45:57 PKT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.automation.tests.LoginTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
