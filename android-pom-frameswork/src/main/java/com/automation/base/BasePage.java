@@ -102,7 +102,7 @@ public class BasePage {
             LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Captured Toast: " + message);
             return message;
         } catch (Exception e) {
-            LoggerUtil.logError(LoggerUtil.getLogger(getClass()), "❌ Failed to capture toast: " + e.getMessage());
+            LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "❌ Failed to capture toast: " + e.getMessage());
             return null;
         }
     }

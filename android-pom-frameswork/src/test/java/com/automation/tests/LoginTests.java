@@ -1,244 +1,234 @@
 package com.automation.tests;
 
-import com.automation.base.BasePage;
 import com.automation.base.BaseTest;
 import com.automation.pages.LoginPage;
 import com.automation.utils.AssertUtils;
 import com.automation.utils.CSVDataProvider;
-import com.automation.utils.LoggerUtil;
 import com.automation.utils.DriverManager;
-
-import org.testng.SkipException;
+import com.automation.utils.LoggerUtil;
+import org.slf4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.Map;
 
-import org.slf4j.Logger;
-
 public class LoginTests extends BaseTest {
+
     private static final Logger log = LoggerUtil.getLogger(LoginTests.class);
     private LoginPage loginPage;
 
+    // ---------------- Test Setup ----------------
     @BeforeMethod
     public void initPage() {
-        // Always get the current fresh driver
-    	System.out.println("Page sees driver hash: " + DriverManager.getDriver().hashCode());
+        System.out.println("Page sees driver hash: " + DriverManager.getDriver().hashCode());
         loginPage = new LoginPage();
     }
 
-    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "positive"})
+    // ---------------- Positive Tests ----------------
+    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "positive"})
     public void PositiveTest_LoginUsingEmail(Map<String, String> data) {
         String email = data.get("email");
         String password = data.get("password");
-        LoggerUtil.logInfo(log, "===== Starting Login Test for: " + email + " (" + password + ") =====");
+        LoggerUtil.logInfo(log, "===== Starting Login Test (Email): " + email + " =====");
 
-        AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
-            getExtentTest()
-        );
-
+        ensureLoginButtonVisible();
         loginPage.loginWithEmail(email, password, getExtentTest());
 
-        String actual = loginPage.getLoginSuccessText();
-        AssertUtils.assertEquals(actual, "Two Step Authentication", "Login success validation", getExtentTest());
+        AssertUtils.assertEquals(
+            loginPage.getLoginSuccessText(),
+            "Two Step Authentication",
+            "Login success validation",
+            getExtentTest()
+        );
     }
 
-    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "positive"})
+    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "positive"})
     public void PositiveTest_LoginUsingPhone(Map<String, String> data) {
         String phone = data.get("phone");
         String password = data.get("password");
-        LoggerUtil.logInfo(log, "===== Starting Login Test for: " + phone + " (" + password + ") =====");
+        LoggerUtil.logInfo(log, "===== Starting Login Test (Phone): " + phone + " =====");
 
-        AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
-            getExtentTest()
-        );
-
+        ensureLoginButtonVisible();
         loginPage.switchLoginMode(getExtentTest());
         loginPage.loginWithPhone(phone, password, getExtentTest());
 
-        String actual = loginPage.getLoginSuccessText();
-        AssertUtils.assertEquals(actual, "Two Step Authentication", "Login success validation", getExtentTest());
+        AssertUtils.assertEquals(
+            loginPage.getLoginSuccessText(),
+            "Two Step Authentication",
+            "Login success validation",
+            getExtentTest()
+        );
     }
 
-    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "negative"})
+    // ---------------- Negative Tests ----------------
+    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "negative"})
     public void NegativeTest_LoginWithEmptyEmail(Map<String, String> data) {
         String password = data.get("password");
-        LoggerUtil.logInfo(log, "===== Starting Negative Login Test with Empty Email with valid Password: (" + password + ") =====");
+        LoggerUtil.logInfo(log, "===== Negative Test: Empty Email =====");
 
-        AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
-            getExtentTest()
-        );
-
+        ensureLoginButtonVisible();
         loginPage.loginWithEmail("", password, getExtentTest());
 
-        String actual = loginPage.getEmailValidationText();
-        AssertUtils.assertEquals(actual, "Please enter an email address", "Email validation message", getExtentTest());
-    }
-
-    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "negative"})
-    public void NegativeTest_LoginWithEmptyPhone(Map<String, String> data) {
-        String password = data.get("password");
-        LoggerUtil.logInfo(log, "===== Starting Negative Login Test with Empty Phone with valid Password: (" + password + ") =====");
-
         AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
+            loginPage.getEmailValidationText(),
+            "Please enter an email address",
+            "Email validation message",
             getExtentTest()
         );
+    }
 
+    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "negative"})
+    public void NegativeTest_LoginWithEmptyPhone(Map<String, String> data) {
+        String password = data.get("password");
+        LoggerUtil.logInfo(log, "===== Negative Test: Empty Phone =====");
+
+        ensureLoginButtonVisible();
         loginPage.switchLoginMode(getExtentTest());
         loginPage.loginWithPhone("", password, getExtentTest());
 
-        String actual = loginPage.getPhoneValidationText();
-        AssertUtils.assertEquals(actual, "Please enter a phone number", "Phone validation message", getExtentTest());
+        AssertUtils.assertEquals(
+            loginPage.getPhoneValidationText(),
+            "Please enter a phone number",
+            "Phone validation message",
+            getExtentTest()
+        );
     }
 
-    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "negative"})
+    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "negative"})
     public void NegativeTest_LoginWithValidEmailAndEmptyPassword(Map<String, String> data) {
         String email = data.get("email");
-        LoggerUtil.logInfo(log, "===== Starting Negative Login Test with valid Email and empty Password =====");
+        LoggerUtil.logInfo(log, "===== Negative Test: Valid Email + Empty Password =====");
 
-        AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
-            getExtentTest()
-        );
-
+        ensureLoginButtonVisible();
         loginPage.loginWithEmail(email, "", getExtentTest());
 
-        String actual = loginPage.getPasswordValidationText();
-        AssertUtils.assertEquals(actual, "Please enter a valid password!", "Password validation message", getExtentTest());
-    }
-
-    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "negative"})
-    public void NegativeTest_LoginWithValidPhoneAndEmptyPassword(Map<String, String> data) {
-        String phone = data.get("phone");
-        LoggerUtil.logInfo(log, "===== Starting Negative Login Test with valid Phone Number and empty Password =====");
-
         AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
+            loginPage.getPasswordValidationText(),
+            "Please enter a valid password!",
+            "Password validation message",
             getExtentTest()
         );
+    }
 
+    @Test(dataProvider = "loginData", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "negative"})
+    public void NegativeTest_LoginWithValidPhoneAndEmptyPassword(Map<String, String> data) {
+        String phone = data.get("phone");
+        LoggerUtil.logInfo(log, "===== Negative Test: Valid Phone + Empty Password =====");
+
+        ensureLoginButtonVisible();
         loginPage.switchLoginMode(getExtentTest());
         loginPage.loginWithPhone(phone, "", getExtentTest());
 
-        String actual = loginPage.getPasswordValidationText();
-        AssertUtils.assertEquals(actual, "Please enter a valid password!", "Password validation message", getExtentTest());
+        AssertUtils.assertEquals(
+            loginPage.getPasswordValidationText(),
+            "Please enter a valid password!",
+            "Password validation message",
+            getExtentTest()
+        );
     }
-    @Test(dataProvider = "InvalidEmails", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "negative"})
+
+    @Test(dataProvider = "InvalidEmails", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "negative"})
     public void NegativeTest_LoginWithInvalidEmail(Map<String, String> data) {
         String email = data.get("email");
         String password = data.get("password");
+        LoggerUtil.logInfo(log, "===== Negative Test: Invalid Email (" + email + ") =====");
 
-      
-        LoggerUtil.logInfo(log, "===== Starting Negative Login Test with Invalid Email: " + email + " (" + password + ") =====");
-
-        AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
-            getExtentTest()
-        );
-
+        ensureLoginButtonVisible();
         loginPage.loginWithEmail(email, password, getExtentTest());
 
-        String actual = loginPage.getInvalidEmailValidationText();
-        AssertUtils.assertEquals(actual, "Please enter a valid email address", "Invalid Email Validation", getExtentTest());
-    	
+        AssertUtils.assertEquals(
+            loginPage.getInvalidEmailValidationText(),
+            "Please enter a valid email address",
+            "Invalid Email Validation",
+            getExtentTest()
+        );
     }
-    @Test(dataProvider = "InvalidPhoneNumbers", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "negative"})
+
+    @Test(dataProvider = "InvalidPhoneNumbers", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "negative"})
     public void NegativeTest_LoginWithInvalidPhone(Map<String, String> data) {
         String phone = data.get("phone");
         String password = data.get("password");
+        LoggerUtil.logInfo(log, "===== Negative Test: Invalid Phone (" + phone + ") =====");
 
-        LoggerUtil.logInfo(log, "===== Starting Negative Login Test with Invalid Phone Number: " + phone + " (" + password + ") =====");
-
-        AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
-            getExtentTest()
-        );
+        ensureLoginButtonVisible();
         loginPage.switchLoginMode(getExtentTest());
         loginPage.loginWithPhone(phone, password, getExtentTest());
 
-        String actual = loginPage.getInvalidPhoneValidationText();
-        AssertUtils.assertEquals(actual, "Please enter a valid phone number", "Invalid Phone Validation", getExtentTest());
-    	
+        AssertUtils.assertEquals(
+            loginPage.getInvalidPhoneValidationText(),
+            "Please enter a valid phone number",
+            "Invalid Phone Validation",
+            getExtentTest()
+        );
     }
-    @Test(dataProvider = "InvalidPasswords", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "negative"})
+
+    @Test(dataProvider = "InvalidPasswords", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "smoke", "negative"})
     public void NegativeTest_LoginWithInvalidPassword(Map<String, String> data) {
         String email = data.get("email");
         String phone = data.get("phone");
         String password = data.get("password");
-        LoggerUtil.logInfo(log, "===== Starting Negative Login Test with Invalid Passwrod: "  + password + " =====");
+        LoggerUtil.logInfo(log, "===== Negative Test: Invalid Password (" + password + ") =====");
 
-        AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
-            getExtentTest()
-        );
-
-        // choose login mode based on which identifier is present
+        ensureLoginButtonVisible();
         if (email != null && !email.isBlank()) {
             loginPage.loginWithEmail(email, password, getExtentTest());
         } else if (phone != null && !phone.isBlank()) {
             loginPage.switchLoginMode(getExtentTest());
             loginPage.loginWithPhone(phone, password, getExtentTest());
         }
-        String actual = loginPage.getInvalidPasswordValidationText();
-        AssertUtils.assertEquals(actual, "Password: 8 characters, uppercase, lowercase, number, special character", "Invalid Password Validation", getExtentTest());
-    	
+
+        AssertUtils.assertEquals(
+            loginPage.getInvalidPasswordValidationText(),
+            "Password: 8 characters, uppercase, lowercase, number, special character",
+            "Invalid Password Validation",
+            getExtentTest()
+        );
     }
-    @Test(dataProvider = "InvalidCredentials", dataProviderClass = CSVDataProvider.class, groups = {"login", "smoke", "negative"})
+
+    @Test(dataProvider = "InvalidCredentials", dataProviderClass = CSVDataProvider.class,
+          groups = {"login", "negative"})
     public void NegativeTest_LoginWithWrongCredential(Map<String, String> data) {
-    	String email = data.get("email");
+        String email = data.get("email");
         String phone = data.get("phone");
         String password = data.get("password");
-        LoggerUtil.logInfo(log, "===== Starting Negative Login Test with Invalid Credentials: " + 
-        	    (email == null || email.isEmpty() ? "" : "Email=" + email + " ") +
-        	    (phone == null || phone.isEmpty() ? "" : "Phone=" + phone + " ") +
-        	    (password == null || password.isEmpty() ? "" : "Password=" + password + " ") +
-        	    "=====");
+        String expected = data.get("assert");
 
-        AssertUtils.assertEquals(
-            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
-            "true",
-            "Login button should be visible",
-            getExtentTest()
-        );
+        LoggerUtil.logInfo(log, "===== Negative Test: Wrong Credentials =====");
 
-        // choose login mode based on which identifier is present
+        ensureLoginButtonVisible();
         if (email != null && !email.isBlank()) {
             loginPage.loginWithEmail(email, password, getExtentTest());
         } else if (phone != null && !phone.isBlank()) {
             loginPage.switchLoginMode(getExtentTest());
             loginPage.loginWithPhone(phone, password, getExtentTest());
         }
-     // 🔥 Capture and validate toast
-        String actualToast = loginPage.getInvalidCredentialsToast();
-        AssertUtils.assertEquals(
-            actualToast,
-            "Incorrect password!",
-            "Invalid Credentials Toast Validation",
+
+        String actualMessage = loginPage.getInvalidCredentialsMessage();
+
+        AssertUtils.assertContains(
+            actualMessage,
+            expected,
+            "Snackbar/Toast validation via mitmproxy",
             getExtentTest()
         );
     }
-    
-    
+
+    // ---------------- Utility ----------------
+    private void ensureLoginButtonVisible() {
+        AssertUtils.assertEquals(
+            String.valueOf(loginPage.isLoginButtonVisible(getExtentTest())),
+            "true",
+            "Login button should be visible",
+            getExtentTest()
+        );
+    }
 }

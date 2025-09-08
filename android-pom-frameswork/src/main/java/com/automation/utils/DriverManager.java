@@ -8,7 +8,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
 public class DriverManager {
-
     private static final ThreadLocal<AppiumDriver> tlDriver = new ThreadLocal<>();
 
     public static void initDriver() {
@@ -16,27 +15,30 @@ public class DriverManager {
             String platform = ConfigReader.get("platform");
             DesiredCapabilities caps = new DesiredCapabilities();
 
+            caps.setCapability("platformName", platform);
+            caps.setCapability("deviceName", ConfigReader.get("deviceName"));
+            caps.setCapability("automationName", ConfigReader.get("automationName"));
+            caps.setCapability("noReset", Boolean.parseBoolean(ConfigReader.get("noReset")));
+
             if ("Android".equalsIgnoreCase(platform)) {
-                caps.setCapability("platformName", "Android");
-                caps.setCapability("deviceName", ConfigReader.get("deviceName"));
-                caps.setCapability("automationName", ConfigReader.get("automationName"));
                 caps.setCapability("appPackage", ConfigReader.get("appPackage"));
                 caps.setCapability("appActivity", ConfigReader.get("appActivity"));
-                caps.setCapability("noReset", Boolean.parseBoolean(ConfigReader.get("noReset")));
+
                 AppiumDriver driver = new AndroidDriver(new URL(ConfigReader.get("appiumServer")), caps);
                 tlDriver.set(driver);
+
             } else if ("iOS".equalsIgnoreCase(platform)) {
-                caps.setCapability("platformName", "iOS");
-                caps.setCapability("deviceName", ConfigReader.get("deviceName"));
-                caps.setCapability("automationName", ConfigReader.get("automationName"));
-                caps.setCapability("noReset", Boolean.parseBoolean(ConfigReader.get("noReset")));
                 AppiumDriver driver = new IOSDriver(new URL(ConfigReader.get("appiumServer")), caps);
                 tlDriver.set(driver);
+
             } else {
                 throw new IllegalArgumentException("Unsupported platform: " + platform);
             }
 
-            getDriver().manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(ConfigReader.getInt("implicitWait", 10)));
+            getDriver().manage().timeouts().implicitlyWait(
+                java.time.Duration.ofSeconds(ConfigReader.getInt("implicitWait", 10))
+            );
+
         } catch (Exception e) {
             throw new RuntimeException("Failed to start Appium driver", e);
         }
@@ -49,7 +51,9 @@ public class DriverManager {
     public static void quitDriver() {
         AppiumDriver driver = tlDriver.get();
         if (driver != null) {
-            try { driver.quit(); } catch (Exception ignored) {}
+            try {
+                driver.quit();
+            } catch (Exception ignored) {}
             tlDriver.remove();
         }
     }

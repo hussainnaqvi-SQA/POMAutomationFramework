@@ -2988,3 +2988,1195 @@ Method public void com.automation.tests.LoginTests.NegativeTest_LoginWithInvalid
 2025-09-05 18:45:57,422 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@4899799b: 16 ms
 2025-09-05 18:45:57,443 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1412682c: 20 ms
 2025-09-05 18:45:57,445 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@53bb71e5: 0 ms
+2025-09-09 17:59:02,785 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-09-09 17:59:02,822 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 25 ms.
+2025-09-09 17:59:02,825 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,827 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,831 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,832 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,833 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,834 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,837 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,838 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,843 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,844 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,846 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,847 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,849 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,851 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,855 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,880 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 24 ms.
+2025-09-09 17:59:02,883 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,886 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,892 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,894 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,894 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,895 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,917 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 18 ms.
+2025-09-09 17:59:02,923 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-09-09 17:59:02,926 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,926 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,928 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 17:59:02,929 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 17:59:02,949 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1931151979\testng-customsuite.xml
+
+2025-09-09 17:59:03,350 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+2025-09-09 17:59:03,394 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 17:59:04,634 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 17:59:04,683 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 17:59:04,743 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 17:59:04,812 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 17:59:04,879 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 17:59:05,464 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@7161457: 348 ms
+2025-09-09 17:59:05,480 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@61ae0d43: 16 ms
+2025-09-09 17:59:05,530 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@10e5bf9c: 50 ms
+2025-09-09 17:59:05,542 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@9f86dc3: 11 ms
+2025-09-09 17:59:05,558 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@bf75b5c: 15 ms
+2025-09-09 17:59:05,559 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@16da476c: 0 ms
+2025-09-09 18:01:06,741 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+2025-09-09 18:01:06,760 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
+2025-09-09 18:01:06,763 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,764 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,770 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,773 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,776 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,779 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,782 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,783 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,785 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,786 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,787 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,787 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,789 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,790 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,793 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,809 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+2025-09-09 18:01:06,813 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,815 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,820 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,822 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,823 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,824 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,832 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-09-09 18:01:06,834 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,836 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,837 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,838 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:01:06,841 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:01:06,851 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--324297503\testng-customsuite.xml
+
+2025-09-09 18:01:07,088 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+2025-09-09 18:01:07,144 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:01:20,376 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:01:20,412 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=qtestor@yopmail.com Password=WrongPass1! =====
+2025-09-09 18:01:20,414 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:01:31,816 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:01:31,819 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-09 18:01:31,819 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-09 18:01:32,001 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:01:33,189 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:01:33,189 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-09 18:01:35,375 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:01:35,527 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:01:35,528 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:01:37,267 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:01:47,387 ERROR c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:01:47,390 ERROR c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:01:49,757 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:01:52,971 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:01:52,980 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=green@yopmail.com Password=Test@123 =====
+2025-09-09 18:01:52,983 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:02:04,210 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:02:04,211 INFO c.a.p.LoginPage [main] Performing login with email: green@yopmail.com
+2025-09-09 18:02:04,212 INFO c.a.p.LoginPage [main] Entering email: green@yopmail.com
+2025-09-09 18:02:05,363 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:02:05,527 INFO c.a.p.LoginPage [main] Typed text 'green@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:02:05,527 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:02:06,993 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:02:07,157 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:02:07,158 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:02:08,963 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:02:19,064 ERROR c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:02:19,065 ERROR c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:02:20,974 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:02:24,178 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:02:24,187 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=fakeuser@yopmail.com Password=abcd@123 =====
+2025-09-09 18:02:24,187 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:02:35,439 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:02:35,440 INFO c.a.p.LoginPage [main] Performing login with email: fakeuser@yopmail.com
+2025-09-09 18:02:35,440 INFO c.a.p.LoginPage [main] Entering email: fakeuser@yopmail.com
+2025-09-09 18:02:35,615 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:02:36,709 INFO c.a.p.LoginPage [main] Typed text 'fakeuser@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:02:36,709 INFO c.a.p.LoginPage [main] Entering password.abcd@123
+2025-09-09 18:02:37,589 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:02:38,367 INFO c.a.p.LoginPage [main] Typed text 'abcd@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:02:38,368 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:03:00,549 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:03:03,758 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:03:03,767 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1231231231 Password=Test@123 =====
+2025-09-09 18:03:03,768 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:03:14,836 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:03:14,837 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:03:15,501 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:03:15,504 INFO c.a.p.LoginPage [main] Performing login with phone number: 1231231231
+2025-09-09 18:03:15,505 INFO c.a.p.LoginPage [main] Entering phone no.: 1231231231
+2025-09-09 18:03:15,666 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:03:16,773 INFO c.a.p.LoginPage [main] Typed text '1231231231' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:03:16,774 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:03:17,396 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:03:18,132 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:03:18,133 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:03:19,885 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:03:30,202 ERROR c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:03:30,203 ERROR c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:03:31,833 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:03:35,061 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:03:35,074 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1541235671 Password=Test@123 =====
+2025-09-09 18:03:35,075 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:03:46,285 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:03:46,286 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:03:46,944 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:03:46,944 INFO c.a.p.LoginPage [main] Performing login with phone number: 1541235671
+2025-09-09 18:03:46,945 INFO c.a.p.LoginPage [main] Entering phone no.: 1541235671
+2025-09-09 18:03:47,110 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:03:48,220 INFO c.a.p.LoginPage [main] Typed text '1541235671' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:03:48,220 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:03:49,532 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:03:49,682 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:03:49,683 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:03:51,445 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:04:01,550 ERROR c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:04:01,552 ERROR c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:04:03,389 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:04:06,581 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:04:06,590 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=7856125645 Password=xyz@4312 =====
+2025-09-09 18:04:06,590 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:04:17,793 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:04:17,793 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:04:18,467 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:04:18,469 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-09 18:04:18,470 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-09 18:04:18,646 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:04:19,746 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:04:19,747 INFO c.a.p.LoginPage [main] Entering password.xyz@4312
+2025-09-09 18:04:21,039 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:04:21,192 INFO c.a.p.LoginPage [main] Typed text 'xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:04:21,193 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:04:43,497 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@314b7945: 110 ms
+2025-09-09 18:04:43,518 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@1de5cc88: 21 ms
+2025-09-09 18:04:43,564 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@25214797: 45 ms
+2025-09-09 18:04:43,578 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@5cd8d029: 14 ms
+2025-09-09 18:04:43,632 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@63e4484d: 53 ms
+2025-09-09 18:04:43,633 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@6a5dd083: 0 ms
+2025-09-09 18:07:05,991 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+2025-09-09 18:07:06,008 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 11 ms.
+2025-09-09 18:07:06,010 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,011 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,017 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,017 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,019 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,020 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,021 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,021 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,022 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,023 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,024 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,025 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,026 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,027 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,030 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,048 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
+2025-09-09 18:07:06,051 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,053 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,058 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,060 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,061 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,062 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,073 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-09-09 18:07:06,075 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,078 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,080 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,082 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:07:06,084 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:07:06,100 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--286069445\testng-customsuite.xml
+
+2025-09-09 18:07:06,405 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+2025-09-09 18:07:06,449 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:07:10,523 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:07:10,555 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=qtestor@yopmail.com Password=WrongPass1! =====
+2025-09-09 18:07:10,556 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:07:21,663 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:07:21,666 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-09 18:07:21,667 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-09 18:07:21,841 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:07:22,969 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:07:22,970 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-09 18:07:23,827 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:07:24,601 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:07:24,602 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:07:26,354 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:07:36,468 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:07:36,470 ERROR c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:07:38,768 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:07:42,063 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:07:42,078 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=green@yopmail.com Password=Test@123 =====
+2025-09-09 18:07:42,080 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:07:53,245 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:07:53,246 INFO c.a.p.LoginPage [main] Performing login with email: green@yopmail.com
+2025-09-09 18:07:53,247 INFO c.a.p.LoginPage [main] Entering email: green@yopmail.com
+2025-09-09 18:07:53,408 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:07:54,500 INFO c.a.p.LoginPage [main] Typed text 'green@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:07:54,501 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:07:55,964 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:07:56,121 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:07:56,121 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:07:58,203 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:08:08,290 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:08:08,291 ERROR c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:08:10,130 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:08:13,407 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:08:13,421 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=fakeuser@yopmail.com Password=abcd@123 =====
+2025-09-09 18:08:13,422 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:08:24,538 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:08:24,539 INFO c.a.p.LoginPage [main] Performing login with email: fakeuser@yopmail.com
+2025-09-09 18:08:24,539 INFO c.a.p.LoginPage [main] Entering email: fakeuser@yopmail.com
+2025-09-09 18:08:24,699 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:08:25,810 INFO c.a.p.LoginPage [main] Typed text 'fakeuser@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:08:25,810 INFO c.a.p.LoginPage [main] Entering password.abcd@123
+2025-09-09 18:08:26,675 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:08:27,417 INFO c.a.p.LoginPage [main] Typed text 'abcd@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:08:27,417 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:08:49,560 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:08:52,693 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:08:52,699 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1231231231 Password=Test@123 =====
+2025-09-09 18:08:52,700 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:09:03,891 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:09:03,891 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:09:04,670 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:09:04,673 INFO c.a.p.LoginPage [main] Performing login with phone number: 1231231231
+2025-09-09 18:09:04,675 INFO c.a.p.LoginPage [main] Entering phone no.: 1231231231
+2025-09-09 18:09:04,906 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:09:06,003 INFO c.a.p.LoginPage [main] Typed text '1231231231' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:09:06,004 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:09:07,301 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:09:07,454 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:09:07,455 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:09:09,207 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:09:19,788 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:09:19,790 ERROR c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:09:21,446 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:09:24,604 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:09:24,612 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1541235671 Password=Test@123 =====
+2025-09-09 18:09:24,612 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:09:35,855 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:09:35,855 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:09:36,529 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:09:36,531 INFO c.a.p.LoginPage [main] Performing login with phone number: 1541235671
+2025-09-09 18:09:36,531 INFO c.a.p.LoginPage [main] Entering phone no.: 1541235671
+2025-09-09 18:09:36,726 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:09:38,039 INFO c.a.p.LoginPage [main] Typed text '1541235671' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:09:38,039 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:09:39,332 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:09:39,478 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:09:39,478 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:09:41,226 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:09:51,317 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:09:51,319 ERROR c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:09:53,200 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:09:56,411 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:09:56,423 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=7856125645 Password=xyz@4312 =====
+2025-09-09 18:09:56,424 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:10:07,602 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:10:07,603 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:10:08,275 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:10:08,276 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-09 18:10:08,277 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-09 18:10:08,439 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:10:09,545 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:10:09,546 INFO c.a.p.LoginPage [main] Entering password.xyz@4312
+2025-09-09 18:10:10,850 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:10:10,996 INFO c.a.p.LoginPage [main] Typed text 'xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:10:10,996 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:10:33,408 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@28e94c2: 105 ms
+2025-09-09 18:10:33,433 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@4601047: 23 ms
+2025-09-09 18:10:33,559 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@1e6bd263: 125 ms
+2025-09-09 18:10:33,618 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@11399548: 54 ms
+2025-09-09 18:10:33,637 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@59f45950: 18 ms
+2025-09-09 18:10:33,638 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@7871d261: 0 ms
+2025-09-09 18:13:18,530 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-09-09 18:13:18,558 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 19 ms.
+2025-09-09 18:13:18,561 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,562 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,567 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,569 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,570 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,571 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,574 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,575 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,577 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,578 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,580 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,580 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,582 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,582 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,586 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,600 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 13 ms.
+2025-09-09 18:13:18,602 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,605 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,611 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,613 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-09-09 18:13:18,614 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,615 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,621 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-09-09 18:13:18,624 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,626 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,628 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,631 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:13:18,632 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:13:18,645 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-77840074\testng-customsuite.xml
+
+2025-09-09 18:13:18,918 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+2025-09-09 18:13:18,956 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:13:22,771 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:13:22,797 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=qtestor@yopmail.com Password=WrongPass1! =====
+2025-09-09 18:13:22,798 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:13:34,007 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:13:34,011 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-09 18:13:34,011 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-09 18:13:34,185 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:13:35,278 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:13:35,279 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-09 18:13:36,143 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:13:36,879 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:13:36,880 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:13:37,742 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:13:47,852 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:13:47,855 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:13:50,200 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:13:53,324 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:13:53,330 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=green@yopmail.com Password=Test@123 =====
+2025-09-09 18:13:53,331 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:14:04,502 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:14:04,504 INFO c.a.p.LoginPage [main] Performing login with email: green@yopmail.com
+2025-09-09 18:14:04,504 INFO c.a.p.LoginPage [main] Entering email: green@yopmail.com
+2025-09-09 18:14:04,671 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:14:05,780 INFO c.a.p.LoginPage [main] Typed text 'green@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:14:05,781 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:14:06,945 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:14:07,737 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:14:07,737 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:14:09,794 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:14:19,877 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:14:19,877 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:14:21,757 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:14:24,768 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:14:24,780 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=fakeuser@yopmail.com Password=abcd@123 =====
+2025-09-09 18:14:24,782 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:14:35,920 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:14:35,921 INFO c.a.p.LoginPage [main] Performing login with email: fakeuser@yopmail.com
+2025-09-09 18:14:35,922 INFO c.a.p.LoginPage [main] Entering email: fakeuser@yopmail.com
+2025-09-09 18:14:36,076 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:14:37,173 INFO c.a.p.LoginPage [main] Typed text 'fakeuser@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:14:37,174 INFO c.a.p.LoginPage [main] Entering password.abcd@123
+2025-09-09 18:14:38,036 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:14:38,779 INFO c.a.p.LoginPage [main] Typed text 'abcd@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:14:38,779 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:15:01,520 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:15:04,572 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:15:04,577 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1231231231 Password=Test@123 =====
+2025-09-09 18:15:04,577 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:15:15,735 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:15:15,736 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:15:16,415 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:15:16,417 INFO c.a.p.LoginPage [main] Performing login with phone number: 1231231231
+2025-09-09 18:15:16,418 INFO c.a.p.LoginPage [main] Entering phone no.: 1231231231
+2025-09-09 18:15:16,575 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:15:17,687 INFO c.a.p.LoginPage [main] Typed text '1231231231' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:15:17,688 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:15:18,371 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:15:19,117 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:15:19,118 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:15:20,861 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:15:31,426 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:15:31,429 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:15:33,140 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:15:36,148 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:15:36,162 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1541235671 Password=Test@123 =====
+2025-09-09 18:15:36,164 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:15:47,349 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:15:47,349 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:15:48,003 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:15:48,004 INFO c.a.p.LoginPage [main] Performing login with phone number: 1541235671
+2025-09-09 18:15:48,004 INFO c.a.p.LoginPage [main] Entering phone no.: 1541235671
+2025-09-09 18:15:48,168 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:15:49,273 INFO c.a.p.LoginPage [main] Typed text '1541235671' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:15:49,273 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:15:49,920 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:15:50,654 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:15:50,654 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:15:52,529 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:16:02,616 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:16:02,616 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Invalid | Actual: null
+2025-09-09 18:16:04,622 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:16:07,889 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:16:07,907 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=7856125645 Password=xyz@4312 =====
+2025-09-09 18:16:07,908 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:16:19,058 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:16:19,059 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:16:19,720 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:16:19,721 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-09 18:16:19,722 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-09 18:16:19,883 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:16:20,983 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:16:20,984 INFO c.a.p.LoginPage [main] Entering password.xyz@4312
+2025-09-09 18:16:22,275 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:16:22,431 INFO c.a.p.LoginPage [main] Typed text 'xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:16:22,431 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:16:44,838 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@28e94c2: 101 ms
+2025-09-09 18:16:44,868 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@4601047: 29 ms
+2025-09-09 18:16:44,894 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@1e6bd263: 24 ms
+2025-09-09 18:16:44,908 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@11399548: 14 ms
+2025-09-09 18:16:44,928 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@59f45950: 20 ms
+2025-09-09 18:16:44,929 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@7871d261: 0 ms
+2025-09-09 18:19:52,644 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+2025-09-09 18:19:52,664 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 13 ms.
+2025-09-09 18:19:52,668 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,669 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,677 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,680 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,682 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,683 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,685 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,686 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,688 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,689 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,691 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-09-09 18:19:52,691 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,692 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,693 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,696 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,711 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
+2025-09-09 18:19:52,714 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,714 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,719 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,720 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,720 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,721 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,729 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-09-09 18:19:52,730 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,732 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,733 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,734 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-09 18:19:52,736 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-09 18:19:52,748 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1316952431\testng-customsuite.xml
+
+2025-09-09 18:19:53,014 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+2025-09-09 18:19:53,059 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:19:57,203 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:19:57,222 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=qtestor@yopmail.com Password=WrongPass1! =====
+2025-09-09 18:19:57,223 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:20:08,420 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:20:08,424 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-09 18:20:08,424 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-09 18:20:08,597 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:20:09,694 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:20:09,695 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-09 18:20:10,534 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:20:11,277 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:20:11,278 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:20:13,027 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:20:23,131 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:20:23,133 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Incorrect password! | Actual: null
+2025-09-09 18:20:25,388 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:20:28,386 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:20:28,397 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=green@yopmail.com Password=Test@123 =====
+2025-09-09 18:20:28,401 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:20:39,518 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:20:39,519 INFO c.a.p.LoginPage [main] Performing login with email: green@yopmail.com
+2025-09-09 18:20:39,520 INFO c.a.p.LoginPage [main] Entering email: green@yopmail.com
+2025-09-09 18:20:39,676 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:20:40,766 INFO c.a.p.LoginPage [main] Typed text 'green@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:20:40,767 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:20:41,618 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:20:42,706 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:20:42,706 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:20:44,474 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:20:54,723 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:20:54,724 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: User not found! | Actual: null
+2025-09-09 18:20:56,621 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:20:59,740 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:20:59,751 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=fakeuser@yopmail.com Password=abcd@123 =====
+2025-09-09 18:20:59,753 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:21:10,931 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:21:10,932 INFO c.a.p.LoginPage [main] Performing login with email: fakeuser@yopmail.com
+2025-09-09 18:21:10,933 INFO c.a.p.LoginPage [main] Entering email: fakeuser@yopmail.com
+2025-09-09 18:21:11,104 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:21:12,195 INFO c.a.p.LoginPage [main] Typed text 'fakeuser@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:21:12,196 INFO c.a.p.LoginPage [main] Entering password.abcd@123
+2025-09-09 18:21:13,659 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:21:13,817 INFO c.a.p.LoginPage [main] Typed text 'abcd@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:21:13,817 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:21:36,009 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:21:39,161 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:21:39,170 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1231231231 Password=Test@123 =====
+2025-09-09 18:21:39,171 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:21:50,436 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:21:50,437 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:21:51,101 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:21:51,102 INFO c.a.p.LoginPage [main] Performing login with phone number: 1231231231
+2025-09-09 18:21:51,103 INFO c.a.p.LoginPage [main] Entering phone no.: 1231231231
+2025-09-09 18:21:52,228 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:21:52,386 INFO c.a.p.LoginPage [main] Typed text '1231231231' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:21:52,387 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:21:53,009 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:21:53,752 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:21:53,752 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:21:55,499 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:22:05,967 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:22:05,968 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Incorrect password! | Actual: null
+2025-09-09 18:22:07,691 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:22:10,631 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:22:10,640 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1541235671 Password=Test@123 =====
+2025-09-09 18:22:10,641 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:22:21,848 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:22:21,849 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:22:22,530 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:22:22,531 INFO c.a.p.LoginPage [main] Performing login with phone number: 1541235671
+2025-09-09 18:22:22,532 INFO c.a.p.LoginPage [main] Entering phone no.: 1541235671
+2025-09-09 18:22:22,692 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:22:23,797 INFO c.a.p.LoginPage [main] Typed text '1541235671' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:22:23,798 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-09 18:22:25,034 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:22:25,178 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:22:25,178 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:22:26,910 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-09 18:22:37,370 INFO c.a.p.LoginPage [main] ❌ Failed to capture toast: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.Toast (tried for 5 second(s) with 500 milliseconds interval)
+2025-09-09 18:22:37,372 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: User not found! | Actual: null
+2025-09-09 18:22:39,228 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-09 18:22:42,442 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-09 18:22:42,449 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=7856125645 Password=xyz@4312 =====
+2025-09-09 18:22:42,450 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-09 18:22:53,597 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-09 18:22:53,597 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-09 18:22:54,257 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-09 18:22:54,258 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-09 18:22:54,259 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-09 18:22:54,422 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:22:55,515 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-09 18:22:55,515 INFO c.a.p.LoginPage [main] Entering password.xyz@4312
+2025-09-09 18:22:56,199 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:22:56,947 INFO c.a.p.LoginPage [main] Typed text 'xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-09 18:22:56,947 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-09 18:23:19,337 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@640c216b: 112 ms
+2025-09-09 18:23:19,365 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@22865072: 28 ms
+2025-09-09 18:23:19,398 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@63e4484d: 33 ms
+2025-09-09 18:23:19,497 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@163e8949: 99 ms
+2025-09-09 18:23:19,511 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@610fbe1c: 14 ms
+2025-09-09 18:23:19,512 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@46d0f89c: 0 ms
+2025-09-11 11:01:20,029 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-09-11 11:01:20,064 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 24 ms.
+2025-09-11 11:01:20,068 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,071 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,074 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,076 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,078 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,079 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,080 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,081 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,084 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,084 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,087 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,088 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,092 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,095 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,107 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,133 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 21 ms.
+2025-09-11 11:01:20,140 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-09-11 11:01:20,143 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-09-11 11:01:20,154 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,159 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,161 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,169 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,195 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 19 ms.
+2025-09-11 11:01:20,198 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,206 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,209 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,212 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 11:01:20,216 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 11:01:20,245 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1223737806\testng-customsuite.xml
+
+2025-09-11 11:01:20,812 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 17 ms.
+2025-09-11 11:01:20,877 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 11:01:36,839 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 11:01:36,886 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=qtestor@yopmail.com Password=WrongPass1! =====
+2025-09-11 11:01:36,889 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-11 11:01:48,250 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-11 11:01:48,832 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-11 11:01:48,833 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-11 11:01:50,402 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:01:51,158 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:01:51,161 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-11 11:01:52,093 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:01:52,936 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:01:52,938 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 11:01:54,791 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 11:02:00,982 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Incorrect password! | Actual: null
+2025-09-11 11:02:03,580 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 11:02:08,063 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 11:02:08,079 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=green@yopmail.com Password=Test@123 =====
+2025-09-11 11:02:08,081 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-11 11:02:19,317 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-11 11:02:19,583 INFO c.a.p.LoginPage [main] Performing login with email: green@yopmail.com
+2025-09-11 11:02:19,584 INFO c.a.p.LoginPage [main] Entering email: green@yopmail.com
+2025-09-11 11:02:19,798 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:02:21,405 INFO c.a.p.LoginPage [main] Typed text 'green@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:02:21,407 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 11:02:22,309 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:02:23,161 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:02:23,162 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 11:02:25,257 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 11:02:31,393 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: User not found! | Actual: null
+2025-09-11 11:02:33,558 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 11:02:38,079 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 11:02:38,089 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Email=fakeuser@yopmail.com Password=abcd@123 =====
+2025-09-11 11:02:38,091 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-11 11:02:49,289 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-11 11:02:49,435 INFO c.a.p.LoginPage [main] Performing login with email: fakeuser@yopmail.com
+2025-09-11 11:02:49,435 INFO c.a.p.LoginPage [main] Entering email: fakeuser@yopmail.com
+2025-09-11 11:02:49,722 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:02:50,964 INFO c.a.p.LoginPage [main] Typed text 'fakeuser@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:02:50,966 INFO c.a.p.LoginPage [main] Entering password.abcd@123
+2025-09-11 11:02:52,509 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:02:52,742 INFO c.a.p.LoginPage [main] Typed text 'abcd@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:02:52,744 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 11:03:15,312 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 11:03:19,430 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 11:03:19,446 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1231231231 Password=Test@123 =====
+2025-09-11 11:03:19,448 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-11 11:03:30,629 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-11 11:03:30,771 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 11:03:31,496 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 11:03:31,499 INFO c.a.p.LoginPage [main] Performing login with phone number: 1231231231
+2025-09-11 11:03:31,500 INFO c.a.p.LoginPage [main] Entering phone no.: 1231231231
+2025-09-11 11:03:32,720 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:03:33,017 INFO c.a.p.LoginPage [main] Typed text '1231231231' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:03:33,018 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 11:03:33,754 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:03:34,613 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:03:34,613 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 11:03:36,658 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 11:03:42,738 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: Incorrect password! | Actual: null
+2025-09-11 11:03:44,617 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 11:03:48,943 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 11:03:48,967 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=1541235671 Password=Test@123 =====
+2025-09-11 11:03:48,970 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-11 11:04:00,091 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-11 11:04:00,248 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 11:04:01,842 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 11:04:01,844 INFO c.a.p.LoginPage [main] Performing login with phone number: 1541235671
+2025-09-11 11:04:01,846 INFO c.a.p.LoginPage [main] Entering phone no.: 1541235671
+2025-09-11 11:04:02,084 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:04:03,285 INFO c.a.p.LoginPage [main] Typed text '1541235671' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:04:03,287 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 11:04:03,984 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:04:04,823 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:04:04,825 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 11:04:06,635 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 11:04:12,695 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Invalid Credentials Toast Validation | Expected substring: User not found! | Actual: null
+2025-09-11 11:04:14,722 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 11:04:18,665 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 11:04:18,676 INFO c.a.t.LoginTests [main] ===== Starting Negative Login Test with Invalid Credentials: Phone=7856125645 Password=xyz@4312 =====
+2025-09-11 11:04:18,680 INFO c.a.p.LoginPage [main] Checking if Login button is visible.
+2025-09-11 11:04:29,989 INFO c.a.p.LoginPage [main] Element By.xpath: //android.widget.Button[@content-desc="Log In"] is displayed: true
+2025-09-11 11:04:30,179 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 11:04:30,878 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 11:04:30,880 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-11 11:04:30,880 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-11 11:04:32,104 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:04:32,393 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 11:04:32,395 INFO c.a.p.LoginPage [main] Entering password.xyz@4312
+2025-09-11 11:04:33,731 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:04:33,986 INFO c.a.p.LoginPage [main] Typed text 'xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 11:04:33,989 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 11:04:56,692 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@7db791df: 136 ms
+2025-09-11 11:04:56,717 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@1f39269d: 24 ms
+2025-09-11 11:04:56,757 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@1a10c47e: 40 ms
+2025-09-11 11:04:56,784 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@6f986501: 24 ms
+2025-09-11 11:04:56,814 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@2d6a0766: 17 ms
+2025-09-11 11:04:56,816 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@1182d1df: 0 ms
+2025-09-11 12:27:09,835 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+2025-09-11 12:27:09,861 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 16 ms.
+2025-09-11 12:27:09,866 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,868 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-09-11 12:27:09,875 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,875 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,876 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,876 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,879 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,880 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,881 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,882 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,883 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,884 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,886 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,886 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,891 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,908 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 16 ms.
+2025-09-11 12:27:09,910 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,912 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,918 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,919 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,920 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,922 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,930 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-09-11 12:27:09,932 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,935 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,936 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,937 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:27:09,940 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:27:09,969 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-610037522\testng-customsuite.xml
+
+2025-09-11 12:27:10,230 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+2025-09-11 12:27:10,277 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:27:22,615 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:27:22,649 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-11 12:27:22,652 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-11 12:27:34,893 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:27:35,064 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:27:35,066 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-11 12:27:36,588 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:27:36,769 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:27:36,770 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:27:38,577 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:27:40,527 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:27:45,323 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:27:45,329 INFO c.a.p.LoginPage [main] Performing login with email: green@yopmail.com
+2025-09-11 12:27:45,332 INFO c.a.p.LoginPage [main] Entering email: green@yopmail.com
+2025-09-11 12:27:57,641 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:27:57,817 INFO c.a.p.LoginPage [main] Typed text 'green@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:27:57,819 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 12:27:58,687 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:27:59,472 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:27:59,473 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:28:01,803 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:28:03,751 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:28:07,006 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:28:07,017 INFO c.a.p.LoginPage [main] Performing login with email: fakeuser@yopmail.com
+2025-09-11 12:28:07,019 INFO c.a.p.LoginPage [main] Entering email: fakeuser@yopmail.com
+2025-09-11 12:28:19,595 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:28:19,767 INFO c.a.p.LoginPage [main] Typed text 'fakeuser@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:28:19,768 INFO c.a.p.LoginPage [main] Entering password.abcd@123
+2025-09-11 12:28:20,617 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:28:21,388 INFO c.a.p.LoginPage [main] Typed text 'abcd@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:28:21,389 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:28:43,645 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:28:46,658 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:28:46,662 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 12:28:58,869 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 12:28:58,869 INFO c.a.p.LoginPage [main] Performing login with phone number: 1231231231
+2025-09-11 12:28:58,870 INFO c.a.p.LoginPage [main] Entering phone no.: 1231231231
+2025-09-11 12:28:59,052 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:29:00,167 INFO c.a.p.LoginPage [main] Typed text '1231231231' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:29:00,168 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 12:29:01,784 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:29:01,949 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:29:01,949 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:29:03,688 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:29:04,757 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:29:07,942 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:29:07,949 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 12:29:19,982 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 12:29:19,982 INFO c.a.p.LoginPage [main] Performing login with phone number: 1541235671
+2025-09-11 12:29:19,982 INFO c.a.p.LoginPage [main] Entering phone no.: 1541235671
+2025-09-11 12:29:21,154 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:29:21,314 INFO c.a.p.LoginPage [main] Typed text '1541235671' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:29:21,315 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 12:29:22,001 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:29:22,776 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:29:22,777 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:29:24,524 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:29:25,577 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:29:28,865 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:29:28,874 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 12:29:41,115 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 12:29:41,116 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-11 12:29:41,116 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-11 12:29:41,291 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:29:42,393 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:29:42,394 INFO c.a.p.LoginPage [main] Entering password.xyz@4312
+2025-09-11 12:29:43,018 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:29:43,785 INFO c.a.p.LoginPage [main] Typed text 'xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:29:43,785 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:30:06,240 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@6f3b13d0: 114 ms
+2025-09-11 12:30:06,257 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@752973de: 17 ms
+2025-09-11 12:30:06,337 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@30ffb2a6: 80 ms
+2025-09-11 12:30:06,353 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@687a0e40: 16 ms
+2025-09-11 12:30:06,369 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@5ab7ac02: 15 ms
+2025-09-11 12:30:06,371 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@4abbe41c: 0 ms
+2025-09-11 12:34:58,411 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-09-11 12:34:58,430 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 13 ms.
+2025-09-11 12:34:58,432 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,435 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-09-11 12:34:58,437 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,437 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,438 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,439 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,440 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,441 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,443 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,443 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,446 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,446 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,448 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,449 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,453 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,468 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
+2025-09-11 12:34:58,475 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,479 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,488 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,491 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,493 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,495 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,512 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 14 ms.
+2025-09-11 12:34:58,514 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,519 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,521 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,525 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:34:58,529 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:34:58,547 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1663203999\testng-customsuite.xml
+
+2025-09-11 12:34:58,890 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+2025-09-11 12:34:58,928 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:35:02,963 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:35:02,979 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-11 12:35:02,980 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-11 12:35:15,404 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:35:15,610 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:35:15,613 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-11 12:35:17,287 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:35:17,447 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:35:17,448 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:35:19,516 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:35:23,844 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: Incorrect password! | Actual: null
+2025-09-11 12:35:26,082 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:35:29,252 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:35:29,256 INFO c.a.p.LoginPage [main] Performing login with email: green@yopmail.com
+2025-09-11 12:35:29,257 INFO c.a.p.LoginPage [main] Entering email: green@yopmail.com
+2025-09-11 12:35:40,806 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:35:41,929 INFO c.a.p.LoginPage [main] Typed text 'green@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:35:41,931 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 12:35:42,764 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:35:43,536 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:35:43,536 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:35:45,291 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:35:49,397 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: User not found! | Actual: null
+2025-09-11 12:35:51,334 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:35:54,540 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:35:54,543 INFO c.a.p.LoginPage [main] Performing login with email: fakeuser@yopmail.com
+2025-09-11 12:35:54,544 INFO c.a.p.LoginPage [main] Entering email: fakeuser@yopmail.com
+2025-09-11 12:36:07,027 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:36:07,189 INFO c.a.p.LoginPage [main] Typed text 'fakeuser@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:36:07,189 INFO c.a.p.LoginPage [main] Entering password.abcd@123
+2025-09-11 12:36:08,055 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:36:08,842 INFO c.a.p.LoginPage [main] Typed text 'abcd@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:36:08,842 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:36:31,038 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:36:34,335 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:36:34,350 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 12:36:46,136 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 12:36:46,136 INFO c.a.p.LoginPage [main] Performing login with phone number: 1231231231
+2025-09-11 12:36:46,137 INFO c.a.p.LoginPage [main] Entering phone no.: 1231231231
+2025-09-11 12:36:47,282 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:36:47,447 INFO c.a.p.LoginPage [main] Typed text '1231231231' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:36:47,448 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 12:36:48,068 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:36:48,829 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:36:48,829 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:36:51,051 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:36:55,157 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: Incorrect password! | Actual: null
+2025-09-11 12:36:56,731 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:37:00,109 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:37:00,111 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 12:37:11,991 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 12:37:11,992 INFO c.a.p.LoginPage [main] Performing login with phone number: 1541235671
+2025-09-11 12:37:11,992 INFO c.a.p.LoginPage [main] Entering phone no.: 1541235671
+2025-09-11 12:37:12,144 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:37:13,280 INFO c.a.p.LoginPage [main] Typed text '1541235671' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:37:13,280 INFO c.a.p.LoginPage [main] Entering password.Test@123
+2025-09-11 12:37:13,906 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:37:14,665 INFO c.a.p.LoginPage [main] Typed text 'Test@123' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:37:14,665 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:37:15,514 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:37:19,615 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: User not found! | Actual: null
+2025-09-11 12:37:21,569 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:37:24,704 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:37:24,721 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 12:37:35,922 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 12:37:35,923 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-11 12:37:35,923 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-11 12:37:36,570 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:37:37,730 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:37:37,731 INFO c.a.p.LoginPage [main] Entering password.xyz@4312
+2025-09-11 12:37:38,415 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:37:39,202 INFO c.a.p.LoginPage [main] Typed text 'xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:37:39,202 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:38:01,650 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@2d24cdd9: 113 ms
+2025-09-11 12:38:01,687 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@5f935d49: 36 ms
+2025-09-11 12:38:01,723 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@6cd45b6c: 36 ms
+2025-09-11 12:38:01,740 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@5885e231: 16 ms
+2025-09-11 12:38:01,753 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@602298b: 12 ms
+2025-09-11 12:38:01,755 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@1fb6b8fb: 0 ms
+2025-09-11 12:45:50,856 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+2025-09-11 12:45:50,877 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 13 ms.
+2025-09-11 12:45:50,880 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,883 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,886 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,888 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,890 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,891 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,893 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,895 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,896 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,897 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,898 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,899 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,901 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,902 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,904 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,920 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
+2025-09-11 12:45:50,924 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,925 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,931 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,932 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-09-11 12:45:50,933 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,934 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,950 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 13 ms.
+2025-09-11 12:45:50,952 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,955 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,956 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,957 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:45:50,958 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:45:50,970 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1122110949\testng-customsuite.xml
+
+2025-09-11 12:45:51,212 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+2025-09-11 12:45:51,258 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:45:55,552 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:45:55,564 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-11 12:45:55,566 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-11 12:46:07,803 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:46:07,981 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:46:07,982 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-11 12:46:09,538 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:46:09,699 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:46:09,700 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:46:11,861 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:46:16,176 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: Incorrect password! | Actual: null
+2025-09-11 12:46:18,391 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:46:21,745 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:46:21,757 INFO c.a.p.LoginPage [main] Performing login with email: # green@yopmail.com
+2025-09-11 12:46:21,760 INFO c.a.p.LoginPage [main] Entering email: # green@yopmail.com
+2025-09-11 12:47:53,079 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+2025-09-11 12:47:53,096 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 11 ms.
+2025-09-11 12:47:53,099 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,100 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,105 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,106 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,108 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,109 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,110 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,111 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,112 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,114 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,116 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,117 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,118 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,119 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,122 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,141 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 18 ms.
+2025-09-11 12:47:53,144 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,146 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,152 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,154 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,154 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,155 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,164 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+2025-09-11 12:47:53,165 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,167 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,168 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,169 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:47:53,171 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:47:53,183 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--188943092\testng-customsuite.xml
+
+2025-09-11 12:47:53,537 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+2025-09-11 12:47:53,585 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:47:57,431 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:47:57,447 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-11 12:47:57,448 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-11 12:48:09,702 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:48:09,861 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:48:09,862 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-11 12:48:10,734 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:48:11,491 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:48:11,492 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:48:13,733 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:48:18,080 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: Incorrect password! | Actual: null
+2025-09-11 12:48:20,292 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:48:23,680 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:48:23,687 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 12:48:35,390 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 12:48:35,391 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-11 12:48:35,392 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-11 12:48:35,570 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:48:36,945 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:48:36,946 INFO c.a.p.LoginPage [main] Entering password.xyz@4312
+2025-09-11 12:48:38,372 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:48:38,541 INFO c.a.p.LoginPage [main] Typed text 'xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:48:38,542 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:49:00,935 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@153d6d74: 81 ms
+2025-09-11 12:49:00,960 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@601d6622: 24 ms
+2025-09-11 12:49:01,005 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@611d0763: 44 ms
+2025-09-11 12:49:01,017 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@3887c7d7: 10 ms
+2025-09-11 12:49:01,043 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@752b69e3: 26 ms
+2025-09-11 12:49:01,043 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@15605d83: 0 ms
+2025-09-11 12:52:42,877 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+2025-09-11 12:52:42,896 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 11 ms.
+2025-09-11 12:52:42,902 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,904 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,909 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,909 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,911 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,912 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,913 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,913 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,915 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,915 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,917 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,917 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,919 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,919 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,923 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,940 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+2025-09-11 12:52:42,943 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,945 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,951 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,953 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-09-11 12:52:42,953 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,954 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,962 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-09-11 12:52:42,963 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,966 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,967 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,967 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 12:52:42,968 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 12:52:42,985 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-575585789\testng-customsuite.xml
+
+2025-09-11 12:52:43,217 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+2025-09-11 12:52:43,257 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:52:47,330 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:52:47,340 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-11 12:52:47,341 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-11 12:52:59,557 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:52:59,721 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:52:59,723 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-11 12:53:00,624 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:53:01,948 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:53:01,949 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:53:02,836 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:53:07,133 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: Incorrect password! | Actual: null
+2025-09-11 12:53:09,376 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 12:53:12,648 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 12:53:12,654 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 12:53:24,539 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 12:53:24,540 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-11 12:53:24,540 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-11 12:53:24,695 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:53:25,821 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 12:53:25,822 INFO c.a.p.LoginPage [main] Entering password.Xyz@4312
+2025-09-11 12:53:26,972 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:53:27,740 INFO c.a.p.LoginPage [main] Typed text 'Xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 12:53:27,740 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 12:53:29,899 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 12:53:33,987 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: User not found! | Actual: null
+2025-09-11 12:53:36,057 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@2c9d90fc: 79 ms
+2025-09-11 12:53:36,076 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@19b75b2b: 18 ms
+2025-09-11 12:53:36,110 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@57186526: 34 ms
+2025-09-11 12:53:36,127 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@2322e56f: 17 ms
+2025-09-11 12:53:36,142 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@372f0a99: 14 ms
+2025-09-11 12:53:36,143 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@16cf8438: 0 ms
+2025-09-11 13:42:08,168 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+2025-09-11 13:42:08,186 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
+2025-09-11 13:42:08,188 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,189 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,192 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,192 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,194 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,194 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,196 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,196 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,198 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,198 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,199 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,200 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,202 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,202 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,206 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,232 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 25 ms.
+2025-09-11 13:42:08,236 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,239 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,244 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,246 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,246 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,247 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,256 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-09-11 13:42:08,257 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,260 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,261 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,261 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-11 13:42:08,263 INFO o.t.i.Utils [main] [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-11 13:42:08,276 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-419570372\testng-customsuite.xml
+
+2025-09-11 13:42:08,535 INFO o.t.i.Utils [main] [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+2025-09-11 13:42:08,578 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 13:42:13,848 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 13:42:13,860 INFO c.a.p.LoginPage [main] Performing login with email: qtestor@yopmail.com
+2025-09-11 13:42:13,861 INFO c.a.p.LoginPage [main] Entering email: qtestor@yopmail.com
+2025-09-11 13:42:25,694 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 13:42:26,965 INFO c.a.p.LoginPage [main] Typed text 'qtestor@yopmail.com' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 13:42:26,966 INFO c.a.p.LoginPage [main] Entering password.WrongPass1!
+2025-09-11 13:42:28,436 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 13:42:28,624 INFO c.a.p.LoginPage [main] Typed text 'WrongPass1!' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 13:42:28,625 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 13:42:30,412 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 13:42:36,739 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: Incorrect password! | Actual: null
+2025-09-11 13:42:39,078 INFO c.a.t.LoginTests [main] ===== Starting Test: NegativeTest_LoginWithWrongCredential =====
+2025-09-11 13:42:42,181 INFO c.a.t.LoginTests [main] App restarted successfully.
+2025-09-11 13:42:42,186 INFO c.a.p.LoginPage [main] Switching Login Mode.
+2025-09-11 13:42:53,895 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ImageView[@content-desc="Sign In With Phone Number"]
+2025-09-11 13:42:53,897 INFO c.a.p.LoginPage [main] Performing login with phone number: 7856125645
+2025-09-11 13:42:53,898 INFO c.a.p.LoginPage [main] Entering phone no.: 7856125645
+2025-09-11 13:42:54,073 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 13:42:55,205 INFO c.a.p.LoginPage [main] Typed text '7856125645' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+2025-09-11 13:42:55,206 INFO c.a.p.LoginPage [main] Entering password.Xyz@4312
+2025-09-11 13:42:56,516 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 13:42:56,683 INFO c.a.p.LoginPage [main] Typed text 'Xyz@4312' into element: By.xpath: //android.widget.ScrollView/android.widget.EditText[2]
+2025-09-11 13:42:56,684 INFO c.a.p.LoginPage [main] Clicking Login button.
+2025-09-11 13:42:58,443 INFO c.a.p.LoginPage [main] Clicked on element: By.xpath: //android.widget.Button[@content-desc="Log In"]
+2025-09-11 13:43:04,536 INFO c.a.u.AssertUtils [main] ❌ Assertion failed: Snackbar/Toast validation via mitmproxy | Expected substring: User not found! | Actual: null
+2025-09-11 13:43:06,611 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.jq.Main@2416c658: 101 ms
+2025-09-11 13:43:06,643 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.FailedReporter@57186526: 31 ms
+2025-09-11 13:43:06,680 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.XMLReporter@38732364: 35 ms
+2025-09-11 13:43:06,687 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.EmailableReporter2@6ddd1c51: 7 ms
+2025-09-11 13:43:06,696 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@6544899b: 8 ms
+2025-09-11 13:43:06,698 INFO o.t.i.Utils [main] [TestNG] Time taken by org.testng.internal.ExitCodeListener@6da54910: 0 ms

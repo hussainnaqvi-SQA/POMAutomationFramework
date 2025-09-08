@@ -30,5 +30,23 @@ public class AssertUtils {
 	        throw e;
 	    }
 	}
+	public static void assertContains(String actual, String expectedSubstring, String message, ExtentTest extentTest) {
+	    try {
+	        if (actual == null || !actual.contains(expectedSubstring)) {
+	            throw new AssertionError("Expected text to contain: '" + expectedSubstring + "', but got: '" + actual + "'");
+	        }
+	        LoggerUtil.logPass(LoggerUtil.getLogger(AssertUtils.class), "✅ " + message + " | Found substring: " + expectedSubstring);
+	        if (extentTest != null) {
+	            extentTest.info("✅ " + message + " | Found substring: " + expectedSubstring);
+	        }
+	    } catch (AssertionError e) {
+	        LoggerUtil.logInfo(LoggerUtil.getLogger(AssertUtils.class), "❌ Assertion failed: " + message + " | Expected substring: " + expectedSubstring + " | Actual: " + actual);
+	        if (extentTest != null) {
+	            extentTest.info("❌ " + message + " | Expected substring: " + expectedSubstring + " | Actual: " + actual);
+	        }
+	        throw e;
+	    }
+	}
+
 
 }

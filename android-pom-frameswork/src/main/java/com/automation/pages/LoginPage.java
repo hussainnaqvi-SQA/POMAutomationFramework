@@ -1,48 +1,51 @@
 package com.automation.pages;
 
 import com.automation.base.BasePage;
+import com.automation.utils.LocatorUtils;
 import com.automation.utils.LoggerUtil;
+import com.automation.utils.MitmproxyClient;
 import com.aventstack.extentreports.ExtentTest;
 
 import io.appium.java_client.AppiumDriver;
-
 import org.openqa.selenium.By;
 import org.slf4j.Logger;
 
 public class LoginPage extends BasePage {
-	 private AppiumDriver driver;
-
-	    
+    private AppiumDriver driver;
     private static final Logger log = LoggerUtil.getLogger(LoginPage.class);
 
-    // XPaths (or IDs if you prefer)
-    private final By usernameField = By.xpath("//android.widget.ScrollView/android.widget.EditText[1]");
-    private final By passwordField = By.xpath("//android.widget.ScrollView/android.widget.EditText[2]");
-    private final By loginBtn = By.xpath("//android.widget.Button[@content-desc=\"Log In\"]");
-    private final By loginSuccessCheck = By.xpath("//android.view.View[@content-desc=\"Two Step Authentication\"]");
-    private final By loginswitch = By.xpath("//android.widget.ImageView[@content-desc=\"Sign In With Phone Number\"]");
-    private final By emailValidation = By.xpath("//android.view.View[@content-desc=\"Please enter an email address\"]");
-    private final By phoneValidation = By.xpath("//android.view.View[@content-desc=\"Please enter an email address\"]");
-    private final By passwordValidation = By.xpath("//android.view.View[@content-desc=\"Please enter a valid password!\"]");
-    private final By invalidEmailCheck = By.xpath("//android.view.View[@content-desc=\"Please enter a valid email address\"]");
-    private final By invalidPhoneCheck = By.xpath("//android.view.View[@content-desc=\"Please enter a valid email address\"]");
-    private final By invalidPasswordCheck = By.xpath("//android.view.View[@content-desc=\"Password: 8 characters, uppercase, lowercase, number, special character\"]");
-    
-    
+    // ---------------- Locators ----------------
+    // Using LocatorUtils to support Flutter + Native
+    private final By usernameField     = LocatorUtils.byTestId("usernameField", "username_input");
+    private final By passwordField     = LocatorUtils.byTestId("passwordField", "password_input");
+    private final By loginBtn          = LocatorUtils.byTestId("loginButton", "login_button");
+    private final By loginSuccessCheck = LocatorUtils.byText("Two Step Authentication");
+    private final By loginSwitch       = LocatorUtils.byTestId("loginSwitch", "sign_in_with_phone");
+
+    // Validation messages
+    private final By emailValidation         = LocatorUtils.byText("Please enter an email address");
+    private final By phoneValidation         = LocatorUtils.byText("Please enter an email address");
+    private final By passwordValidation      = LocatorUtils.byText("Please enter a valid password!");
+    private final By invalidEmailCheck       = LocatorUtils.byText("Please enter a valid email address");
+    private final By invalidPhoneCheck       = LocatorUtils.byText("Please enter a valid email address");
+    private final By invalidPasswordCheck    = LocatorUtils.byText("Password: 8 characters, uppercase, lowercase, number, special character");
+
+    // ---------------- Actions ----------------
     public void enterEmail(String email, ExtentTest extentTest) {
         LoggerUtil.logInfo(log, "Entering email: " + email);
-        click(usernameField, extentTest); // click to focus
+        click(usernameField, extentTest);
         type(usernameField, email, extentTest);
     }
+
     public void enterPhone(String phone, ExtentTest extentTest) {
-        LoggerUtil.logInfo(log, "Entering phone no.: " + phone);
-        click(usernameField, extentTest); // click to focus
+        LoggerUtil.logInfo(log, "Entering phone number: " + phone);
+        click(usernameField, extentTest);
         type(usernameField, phone, extentTest);
     }
 
     public void enterPassword(String password, ExtentTest extentTest) {
-        LoggerUtil.logInfo(log, "Entering password." + password);
-        click(passwordField, extentTest); // click to focus
+        LoggerUtil.logInfo(log, "Entering password: " + password);
+        click(passwordField, extentTest);
         type(passwordField, password, extentTest);
     }
 
@@ -62,17 +65,19 @@ public class LoginPage extends BasePage {
         enterPassword(password, extentTest);
         tapLogin(extentTest);
     }
+
     public void loginWithPhone(String phone, String password, ExtentTest extentTest) {
         LoggerUtil.logInfo(log, "Performing login with phone number: " + phone);
         enterPhone(phone, extentTest);
         enterPassword(password, extentTest);
         tapLogin(extentTest);
     }
-    
-    public String getInvalidCredentialsToast() {
-        return getToastMessage(5);  // wait max 5 seconds for the toast
+
+    // ---------------- Validation ----------------
+    public String getInvalidCredentialsMessage() {
+        return MitmproxyClient.waitForMessage("Invalid credentials", 6);
     }
-    
+
     public String getLoginSuccessText() {
         return getText(loginSuccessCheck);
     }
@@ -80,27 +85,30 @@ public class LoginPage extends BasePage {
     public String getEmailValidationText() {
         return getText(emailValidation);
     }
+
     public String getPhoneValidationText() {
         return getText(phoneValidation);
     }
+
     public String getPasswordValidationText() {
         return getText(passwordValidation);
     }
+
     public String getInvalidEmailValidationText() {
         return getText(invalidEmailCheck);
     }
+
     public String getInvalidPhoneValidationText() {
         return getText(invalidPhoneCheck);
     }
+
     public String getInvalidPasswordValidationText() {
         return getText(invalidPasswordCheck);
     }
-//    public String getInvalidCredientialsValidationText() {
-//        return getText(invalidCredentialsCheck);
-//    }
-   
+
+    // ---------------- Utility ----------------
     public void switchLoginMode(ExtentTest extentTest) {
-    	LoggerUtil.logInfo(log, "Switching Login Mode.");
-    	click( loginswitch, extentTest);
+        LoggerUtil.logInfo(log, "Switching Login Mode.");
+        click(loginSwitch, extentTest);
     }
 }
