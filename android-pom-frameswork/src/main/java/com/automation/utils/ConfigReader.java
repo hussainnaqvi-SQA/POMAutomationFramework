@@ -1,29 +1,39 @@
 package com.automation.utils;
 
 import java.io.FileInputStream;
-import java.io.InputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
-    private static final Properties props = new Properties();
+    private static Properties properties = new Properties();
 
     static {
-        try (InputStream is = new FileInputStream("src/main/resources/config.properties")) {
-            props.load(is);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static String get(String key) {
-        return props.getProperty(key);
-    }
-
-    public static int getInt(String key, int defaultValue) {
         try {
-            return Integer.parseInt(props.getProperty(key));
-        } catch (Exception e) {
-            return defaultValue;
+            FileInputStream fis = new FileInputStream("src/main/resources/config.properties");
+            properties.load(fis);
+            fis.close();
+        } catch (IOException e) {
+            throw new RuntimeException("❌ Failed to load config.properties file: " + e.getMessage());
         }
+    }
+
+    // --- Strict get (throws if missing) ---
+    public static String get(String key) {
+        String value = properties.getProperty(key);
+        if (value == null) {
+            throw new RuntimeException("❌ Missing config property: " + key);
+        }
+        return value.trim();
+    }
+
+    // --- Get with default ---
+    public static String get(String key, String defaultValue) {
+        String value = properties.getProperty(key);
+        return (value != null) ? value.trim() : defaultValue;
+    }
+
+    // --- Alias for compatibility ---
+    public static String getOrDefault(String key, String defaultValue) {
+        return get(key, defaultValue);
     }
 }

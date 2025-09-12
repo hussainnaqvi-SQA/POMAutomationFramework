@@ -1,34 +1,43 @@
 package com.automation.pages;
 
 import com.automation.base.BasePage;
-import com.automation.utils.LocatorUtils;
+import com.automation.utils.LogcatUtils;
 import com.automation.utils.LoggerUtil;
 import com.automation.utils.MitmproxyClient;
 import com.aventstack.extentreports.ExtentTest;
 
-import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.AppiumBy;
+
+import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 
+/**
+ * LoginPage - Handles login flows (Email + Phone).
+ * Uses native Appium locators (By) to keep Flutter-agnostic.
+ */
 public class LoginPage extends BasePage {
-    private AppiumDriver driver;
+
     private static final Logger log = LoggerUtil.getLogger(LoginPage.class);
 
     // ---------------- Locators ----------------
-    // Using LocatorUtils to support Flutter + Native
-    private final By usernameField     = LocatorUtils.byTestId("usernameField", "username_input");
-    private final By passwordField     = LocatorUtils.byTestId("passwordField", "password_input");
-    private final By loginBtn          = LocatorUtils.byTestId("loginButton", "login_button");
-    private final By loginSuccessCheck = LocatorUtils.byText("Two Step Authentication");
-    private final By loginSwitch       = LocatorUtils.byTestId("loginSwitch", "sign_in_with_phone");
+    private final By usernameField     = By.xpath("//android.widget.ScrollView/android.widget.EditText[1]");
+    private final By passwordField     = By.xpath("//android.widget.ScrollView/android.widget.EditText[2]");
+    private final By loginBtn          = By.xpath("//android.widget.Button[@content-desc=\"Log In\"]");
+    private final By loginSuccessCheck = By.xpath("//android.view.View[@content-desc=\"Two Step Authentication\"]");
+    private final By loginSwitch       = By.xpath("//android.widget.ImageView[@content-desc=\"Sign In With Phone Number\"]");
 
     // Validation messages
-    private final By emailValidation         = LocatorUtils.byText("Please enter an email address");
-    private final By phoneValidation         = LocatorUtils.byText("Please enter an email address");
-    private final By passwordValidation      = LocatorUtils.byText("Please enter a valid password!");
-    private final By invalidEmailCheck       = LocatorUtils.byText("Please enter a valid email address");
-    private final By invalidPhoneCheck       = LocatorUtils.byText("Please enter a valid email address");
-    private final By invalidPasswordCheck    = LocatorUtils.byText("Password: 8 characters, uppercase, lowercase, number, special character");
+    private final By emailValidation        = By.xpath("//android.view.View[@content-desc=\"Please enter an email address\"]");
+    private final By phoneValidation        = By.xpath("//android.view.View[@content-desc=\"Please enter a phone number\"]");
+    private final By passwordValidation     = By.xpath("//android.view.View[@content-desc=\"Please enter a valid password!\"]");
+    private final By invalidEmailCheck      = By.xpath("//android.view.View[@content-desc=\"Please enter a valid email address\"]");
+    private final By invalidPhoneCheck      = By.xpath("//android.view.View[@content-desc=\"Please enter a valid phone number\"]");
+    private final By invalidPasswordCheck   = By.xpath("//android.view.View[@content-desc=\"Password: 8 characters, uppercase, lowercase, number, special character\"]");
 
     // ---------------- Actions ----------------
     public void enterEmail(String email, ExtentTest extentTest) {
@@ -38,7 +47,7 @@ public class LoginPage extends BasePage {
     }
 
     public void enterPhone(String phone, ExtentTest extentTest) {
-        LoggerUtil.logInfo(log, "Entering phone number: " + phone);
+        LoggerUtil.logInfo(log, "Entering phone: " + phone);
         click(usernameField, extentTest);
         type(usernameField, phone, extentTest);
     }
@@ -67,15 +76,29 @@ public class LoginPage extends BasePage {
     }
 
     public void loginWithPhone(String phone, String password, ExtentTest extentTest) {
-        LoggerUtil.logInfo(log, "Performing login with phone number: " + phone);
+        LoggerUtil.logInfo(log, "Performing login with phone: " + phone);
         enterPhone(phone, extentTest);
         enterPassword(password, extentTest);
         tapLogin(extentTest);
     }
 
     // ---------------- Validation ----------------
-    public String getInvalidCredentialsMessage() {
-        return MitmproxyClient.waitForMessage("Invalid credentials", 6);
+    public String getSnackBarOrToastMessage(String expectedSubstring, int timeoutSeconds) {
+        // 1. Try direct UI element (preferred)
+        try {
+            WebElement element = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
+                .until(ExpectedConditions.presenceOfElementLocated(
+                    AppiumBy.xpath("//*[contains(@text,'" + expectedSubstring + "')]")
+                ));
+            return element.getText();
+        } catch (Exception uiMiss) {
+            // 2. Fallback: Search logcat
+            String logMessage = LogcatUtils.getLogContaining(expectedSubstring, timeoutSeconds);
+            if (logMessage != null) {
+                return logMessage;
+            }
+        }
+        return null;
     }
 
     public String getLoginSuccessText() {

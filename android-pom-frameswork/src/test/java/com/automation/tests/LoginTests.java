@@ -212,12 +212,12 @@ public class LoginTests extends BaseTest {
             loginPage.loginWithPhone(phone, password, getExtentTest());
         }
 
-        String actualMessage = loginPage.getInvalidCredentialsMessage();
+        String actualMessage = loginPage.getSnackBarOrToastMessage(expected, 5);
 
         AssertUtils.assertContains(
             actualMessage,
             expected,
-            "Snackbar/Toast validation via mitmproxy",
+            "Snackbar/Toast validation",
             getExtentTest()
         );
     }

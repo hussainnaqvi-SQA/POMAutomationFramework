@@ -1,11 +1,12 @@
 package com.automation.reports;
 
 import com.aventstack.extentreports.ExtentTest;
-import java.util.HashMap;
+
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
 
 public class ExtentTestManager {
-    private static Map<Long, ExtentTest> extentTestMap = new HashMap<>();
+    private static final Map<Long, ExtentTest> extentTestMap = new ConcurrentHashMap<>();
 
     public static ExtentTest getTest() {
         return extentTestMap.get(Thread.currentThread().getId());

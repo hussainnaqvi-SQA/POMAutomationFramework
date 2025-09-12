@@ -22,9 +22,12 @@ public class BaseTest {
         return ExtentTestManager.getTest();
     }
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void setupSuite() {
         extent = ExtentManager.getInstance();
+        if (extent == null) {
+            throw new RuntimeException("❌ Extent Report initialization failed!");
+        }
     }
 
     @AfterSuite(alwaysRun = true)
@@ -37,57 +40,64 @@ public class BaseTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setupTest(Method method) {
+        if (extent == null) {
+            extent = ExtentManager.getInstance(); // fallback safety net
+        }
+
         ExtentTest test = extent.createTest(method.getName());
         ExtentTestManager.setTest(test);
 
         LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "===== Starting Test: " + method.getName() + " =====");
         test.info("Starting Test: " + method.getName());
 
-        // ⚡ Ensure fresh driver each time
         DriverManager.quitDriver();
         DriverManager.initDriver();
 
         AppiumDriver driver = DriverManager.getDriver();
 
-        // ✅ Reset app state before each test iteration
         try {
             InteractsWithApps appDriver = (InteractsWithApps) driver;
-            appDriver.terminateApp(ConfigReader.get("appPackage"));
-            appDriver.activateApp(ConfigReader.get("appPackage"));
-            LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "App restarted successfully.");
+            String appPackage = ConfigReader.getOrDefault("appPackage", "");
+            if (!appPackage.isEmpty()) {
+                appDriver.terminateApp(appPackage);
+                appDriver.activateApp(appPackage);
+                LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "App restarted successfully.");
+            } else {
+                LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "⚠️ Skipping app restart, appPackage missing.");
+            }
         } catch (Exception e) {
             LoggerUtil.logError(LoggerUtil.getLogger(getClass()), "⚠️ Failed to reset app: " + e.getMessage());
-            throw e;
         }
 
         System.out.println("Driver hash: " + DriverManager.getDriver().hashCode());
     }
 
-    
     @AfterMethod(alwaysRun = true)
     public void tearDownTest(ITestResult result) {
         ExtentTest test = ExtentTestManager.getTest();
 
-        if (result.getStatus() == ITestResult.FAILURE) {
-            String shortMessage = (result.getThrowable() != null && result.getThrowable().getMessage() != null)
-                    ? result.getThrowable().getMessage().split("\n")[0]
-                    : "Test Failed";
+        if (test != null) {
+            switch (result.getStatus()) {
+                case ITestResult.FAILURE:
+                    String shortMessage = (result.getThrowable() != null && result.getThrowable().getMessage() != null)
+                            ? result.getThrowable().getMessage().split("\n")[0]
+                            : "Test Failed";
+                    test.fail("❌ " + shortMessage);
+                    String screenshotPath = ScreenshotUtils.captureScreenshot(result.getName());
+                    if (screenshotPath != null) {
+                        test.addScreenCaptureFromPath(screenshotPath);
+                    }
+                    break;
 
-            test.fail("❌ " + shortMessage);
+                case ITestResult.SKIP:
+                    test.skip("⚠️ Test Skipped");
+                    break;
 
-            // 📸 Screenshot only for failures
-            String screenshotPath = ScreenshotUtils.captureScreenshot(result.getName());
-            if (screenshotPath != null) {
-                test.addScreenCaptureFromPath(screenshotPath);
+                case ITestResult.SUCCESS:
+                    test.pass("✅ Test Passed");
+                    break;
             }
-
-        } else if (result.getStatus() == ITestResult.SKIP) {
-            test.skip("⚠️ Test Skipped");
-        }else if (result.getStatus() == ITestResult.SUCCESS) {
-            test.pass("✅ Test Passed");
         }
-        // ❌ Remove SUCCESS logging here → BasePage already logs "Validation passed"
-        // ❌ Remove extra screenshots here → handled above for failures only
 
         DriverManager.quitDriver();
         if (extent != null) extent.flush();

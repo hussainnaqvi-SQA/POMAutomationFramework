@@ -11,42 +11,39 @@ public class AssertUtils {
 	        LoggerUtil.logError(LoggerUtil.getLogger(AssertUtils.class), "❌ Assertion failed: " + message);
 	        Assert.fail("Assertion failed: " + message);
 	    } else {
-	        LoggerUtil.logPass(LoggerUtil.getLogger(AssertUtils.class), "✅ " + message);
+	        LoggerUtil.logInfo(LoggerUtil.getLogger(AssertUtils.class), "✅ " + message);
 	    }
 	}
 
-	public static void assertEquals(String actual, String expected, String message, ExtentTest extentTest) {
-	    try {
-	        Assert.assertEquals(actual, expected, message);
-	        if (extentTest != null) {
-	            extentTest.info("Validation passed: " + message +
-	                            " | Expected: " + expected + " | Actual: " + actual);
+
+	    public static void assertEquals(String actual, String expected, String message, ExtentTest extentTest) {
+	        try {
+	            Assert.assertEquals(actual, expected, message);
+	            String infoMsg = "✅ " + message + " | Expected: " + expected + " | Actual: " + actual;
+	            LoggerUtil.logInfo(LoggerUtil.getLogger(AssertUtils.class), infoMsg);
+	        } catch (AssertionError e) {
+	            String failMsg = "❌ " + message + " | Expected: " + expected + " but got: " + actual;
+	            LoggerUtil.logInfo(LoggerUtil.getLogger(AssertUtils.class), failMsg);
+	            throw e; // TestNG will mark test as FAIL
 	        }
-	    } catch (AssertionError e) {
-	        if (extentTest != null) {
-	            extentTest.fail("❌ Assertion failed: " + message +
-	                            " | Expected: " + expected + " but got: " + actual);
-	        }
-	        throw e;
 	    }
-	}
-	public static void assertContains(String actual, String expectedSubstring, String message, ExtentTest extentTest) {
-	    try {
-	        if (actual == null || !actual.contains(expectedSubstring)) {
-	            throw new AssertionError("Expected text to contain: '" + expectedSubstring + "', but got: '" + actual + "'");
+
+	    public static void assertContains(String actual, String expectedSubstring, String message, ExtentTest extentTest) {
+	        try {
+	            if (actual == null || !actual.contains(expectedSubstring)) {
+	                throw new AssertionError("Expected text to contain: '" + expectedSubstring + "', but got: '" + actual + "'");
+	            }
+	            String infoMsg = "✅ " + message + " | Found substring: " + expectedSubstring;
+	            LoggerUtil.logInfo(LoggerUtil.getLogger(AssertUtils.class), infoMsg);
+	        } catch (AssertionError e) {
+	            String failMsg = "❌ " + message + " | Expected substring: " + expectedSubstring + " | Actual: " + actual;
+	            LoggerUtil.logInfo(LoggerUtil.getLogger(AssertUtils.class), failMsg);
+	            throw e;
 	        }
-	        LoggerUtil.logPass(LoggerUtil.getLogger(AssertUtils.class), "✅ " + message + " | Found substring: " + expectedSubstring);
-	        if (extentTest != null) {
-	            extentTest.info("✅ " + message + " | Found substring: " + expectedSubstring);
-	        }
-	    } catch (AssertionError e) {
-	        LoggerUtil.logInfo(LoggerUtil.getLogger(AssertUtils.class), "❌ Assertion failed: " + message + " | Expected substring: " + expectedSubstring + " | Actual: " + actual);
-	        if (extentTest != null) {
-	            extentTest.info("❌ " + message + " | Expected substring: " + expectedSubstring + " | Actual: " + actual);
-	        }
-	        throw e;
 	    }
-	}
+	
+
+
 
 
 }

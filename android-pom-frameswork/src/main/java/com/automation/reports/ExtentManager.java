@@ -14,7 +14,7 @@ public class ExtentManager {
     private static ExtentReports extent;
     private static String reportPath; // Store path so we can log it later
 
-    public static ExtentReports getInstance() {
+    public static synchronized ExtentReports getInstance() {
         if (extent == null) {
             createInstance();
         }
@@ -27,30 +27,44 @@ public class ExtentManager {
             String reportsDir = System.getProperty("user.dir") + "/reports";
             new File(reportsDir).mkdirs();
 
+            // Config values with fallbacks (avoids NPE)
+            String projectName = safeConfig("projectName", "AutomationProject");
+            String environment = safeConfig("environment", "QA");
+            String testerName  = safeConfig("testerName", "UnknownTester");
+
             // Create file name with timestamp
             String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-            String reportName = ConfigReader.get("projectName") + "_TestReport_" + timestamp + ".html";
+            String reportName = projectName + "_TestReport_" + timestamp + ".html";
             reportPath = reportsDir + "/" + reportName;
 
             // Create reporter
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
-            sparkReporter.config().setTheme(Theme.DARK); // 🌙 Dark mode
-            sparkReporter.config().setDocumentTitle(ConfigReader.get("projectName") + " Automation Report");
-            sparkReporter.config().setReportName(ConfigReader.get("projectName") + " Test Execution");
+            sparkReporter.config().setTheme(Theme.DARK);
+            sparkReporter.config().setDocumentTitle(projectName + " Automation Report");
+            sparkReporter.config().setReportName(projectName + " Test Execution");
 
             // Create ExtentReports instance
             extent = new ExtentReports();
             extent.attachReporter(sparkReporter);
 
             // Add metadata
-            extent.setSystemInfo("Project", ConfigReader.get("projectName"));
-            extent.setSystemInfo("Environment", ConfigReader.get("environment"));
-            extent.setSystemInfo("Tester", ConfigReader.get("testerName"));
+            extent.setSystemInfo("Project", projectName);
+            extent.setSystemInfo("Environment", environment);
+            extent.setSystemInfo("Tester", testerName);
 
             System.out.println("✅ Extent report will be generated at: " + reportPath);
 
         } catch (Exception e) {
             System.err.println("❌ Failed to initialize Extent Report: " + e.getMessage());
+        }
+    }
+
+    private static String safeConfig(String key, String defaultValue) {
+        try {
+            String value = ConfigReader.get(key);
+            return (value != null && !value.trim().isEmpty()) ? value : defaultValue;
+        } catch (Exception e) {
+            return defaultValue;
         }
     }
 

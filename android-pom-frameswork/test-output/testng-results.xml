@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="11" passed="0" failed="2" skipped="0">
+<testng-results ignored="9" total="11" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-11T13:42:08 PKT" name="Default suite" finished-at="2025-09-11T13:43:06 PKT" duration-ms="57931">
+  <suite started-at="2025-09-12T17:48:13 PKT" name="Default suite" finished-at="2025-09-12T17:49:33 PKT" duration-ms="79622">
     <groups>
       <group name="negative">
-        <method signature="LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@f001896]" name="NegativeTest_LoginWithWrongCredential" class="com.automation.tests.LoginTests"/>
+        <method signature="LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@e98770d]" name="NegativeTest_LoginWithWrongCredential" class="com.automation.tests.LoginTests"/>
       </group> <!-- negative -->
       <group name="login">
-        <method signature="LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@f001896]" name="NegativeTest_LoginWithWrongCredential" class="com.automation.tests.LoginTests"/>
+        <method signature="LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@e98770d]" name="NegativeTest_LoginWithWrongCredential" class="com.automation.tests.LoginTests"/>
       </group> <!-- login -->
     </groups>
-    <test started-at="2025-09-11T13:42:08 PKT" name="Default test" finished-at="2025-09-11T13:43:06 PKT" duration-ms="57931">
+    <test started-at="2025-09-12T17:48:13 PKT" name="Default test" finished-at="2025-09-12T17:49:33 PKT" duration-ms="79622">
       <class name="com.automation.tests.LoginTests">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:42:08 PKT" name="setupSuite" finished-at="2025-09-11T13:42:08 PKT" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:48:13 PKT" name="setupSuite" finished-at="2025-09-12T17:48:13 PKT" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:42:08 PKT" name="setupTest" finished-at="2025-09-11T13:42:13 PKT" duration-ms="5280" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:48:13 PKT" name="setupTest" finished-at="2025-09-12T17:48:22 PKT" duration-ms="8673" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,11 +28,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:42:13 PKT" name="initPage" finished-at="2025-09-11T13:42:13 PKT" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:48:22 PKT" name="initPage" finished-at="2025-09-12T17:48:22 PKT" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:42:13 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-11T13:42:36 PKT" duration-ms="22887" status="FAIL">
+        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:48:22 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-12T17:48:48 PKT" duration-ms="26457" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,60 +40,21 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected text to contain: 'Incorrect password!', but got: 'null']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected text to contain: 'Incorrect password!', but got: 'null'
-at com.automation.utils.AssertUtils.assertContains(AssertUtils.java:36)
-at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:225)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeTest_LoginWithWrongCredential -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:42:36 PKT" name="tearDownTest" finished-at="2025-09-11T13:42:39 PKT" duration-ms="2330" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:48:48 PKT" name="tearDownTest" finished-at="2025-09-12T17:48:49 PKT" duration-ms="869" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@f001896] output={null}]]]>
+                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=SUCCESS method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@e98770d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:42:39 PKT" name="setupTest" finished-at="2025-09-11T13:42:42 PKT" duration-ms="3106" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:48:49 PKT" name="setupTest" finished-at="2025-09-12T17:48:55 PKT" duration-ms="5505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,26 +65,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:42:42 PKT" name="initPage" finished-at="2025-09-11T13:42:42 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:48:55 PKT" name="initPage" finished-at="2025-09-12T17:48:55 PKT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:42:42 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-11T13:43:04 PKT" duration-ms="22353" status="FAIL">
+        <test-method signature="NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:48:55 PKT" name="NegativeTest_LoginWithWrongCredential" data-provider="InvalidCredentials" finished-at="2025-09-12T17:49:30 PKT" duration-ms="35541" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=, phone=7856125645, password=Xyz@4312, assert=User not found!}]]>
+                <![CDATA[{email=, phone=7856125645, password=xyz@4312, assert=User not found!}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected text to contain: 'User not found!', but got: 'null']]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[@content-desc="Log In"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.dignitestudios.drop_in...., appium:appPackage: com.dignitestudios.drop_in, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dignitestudios.drop_in...., appPackage: com.dignitestudios.drop_in, automationName: UiAutomator2, deviceName: emulator-5554, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: realme, appium:deviceModel: RMX3834, appium:deviceName: 192.168.10.208:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 192.168.10.208:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 14, appium:statBarHeight: 64, appium:takesScreenshot: true, appium:viewportRect: {height: 1536, left: 0, top: 64, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b0111b6b-a047-4197-bfd0-748f2034f38f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected text to contain: 'User not found!', but got: 'null'
-at com.automation.utils.AssertUtils.assertContains(AssertUtils.java:36)
-at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:225)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[@content-desc="Log In"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.dignitestudios.drop_in...., appium:appPackage: com.dignitestudios.drop_in, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.dignitestudios.drop_in...., appPackage: com.dignitestudios.drop_in, automationName: UiAutomator2, deviceName: emulator-5554, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: realme, appium:deviceModel: RMX3834, appium:deviceName: 192.168.10.208:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 192.168.10.208:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 14, appium:statBarHeight: 64, appium:takesScreenshot: true, appium:viewportRect: {height: 1536, left: 0, top: 64, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b0111b6b-a047-4197-bfd0-748f2034f38f
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.automation.base.BasePage.waitUntil(BasePage.java:37)
+at com.automation.base.BasePage.waitForVisible(BasePage.java:41)
+at com.automation.base.BasePage.click(BasePage.java:51)
+at com.automation.pages.LoginPage.tapLogin(LoginPage.java:63)
+at com.automation.pages.LoginPage.loginWithPhone(LoginPage.java:82)
+at com.automation.tests.LoginTests.NegativeTest_LoginWithWrongCredential(LoginTests.java:212)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,22 +131,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeTest_LoginWithWrongCredential -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:43:04 PKT" name="tearDownTest" finished-at="2025-09-11T13:43:06 PKT" duration-ms="1907" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:49:30 PKT" name="tearDownTest" finished-at="2025-09-12T17:49:33 PKT" duration-ms="2478" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@f001896] output={null}]]]>
+                <![CDATA[[TestResult name=NegativeTest_LoginWithWrongCredential status=FAILURE method=LoginTests.NegativeTest_LoginWithWrongCredential(java.util.Map)[pri:0, instance:com.automation.tests.LoginTests@e98770d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:com.automation.tests.LoginTests@f001896]" started-at="2025-09-11T13:43:06 PKT" name="tearDownSuite" finished-at="2025-09-11T13:43:06 PKT" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:com.automation.tests.LoginTests@e98770d]" started-at="2025-09-12T17:49:33 PKT" name="tearDownSuite" finished-at="2025-09-12T17:49:33 PKT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->

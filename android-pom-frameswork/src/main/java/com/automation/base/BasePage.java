@@ -6,51 +6,71 @@ import com.aventstack.extentreports.ExtentTest;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.PerformsTouchActions;
-import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import io.appium.java_client.touch.offset.PointOption;
-import io.appium.java_client.android.AndroidDriver;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.slf4j.Logger;
+
 import java.time.Duration;
 
+/**
+ * BasePage - Common reusable methods for all page objects.
+ */
 public class BasePage {
 
-	
-    protected AppiumDriver driver() {
-        return DriverManager.getDriver();
+    protected final AppiumDriver driver;
+    private final Logger log;
+
+    public BasePage() {
+        this.driver = DriverManager.getDriver();
+        this.log = LoggerUtil.getLogger(getClass());
     }
 
-    // --- Wait helpers ---
+    // --- Generic wait helper ---
+    protected <T> T waitUntil(ExpectedCondition<T> condition, int seconds) {
+        return new WebDriverWait(driver, Duration.ofSeconds(seconds)).until(condition);
+    }
+
     private WebElement waitForVisible(By locator, int seconds) {
-        return new WebDriverWait(driver(), Duration.ofSeconds(seconds))
-                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return waitUntil(ExpectedConditions.visibilityOfElementLocated(locator), seconds);
     }
 
     private WebElement waitForPresence(By locator, int seconds) {
-        return new WebDriverWait(driver(), Duration.ofSeconds(seconds))
-                .until(ExpectedConditions.presenceOfElementLocated(locator));
+        return waitUntil(ExpectedConditions.presenceOfElementLocated(locator), seconds);
     }
 
     // --- Action methods ---
     public void click(By locator, ExtentTest extentTest) {
-        WebElement el = waitForVisible(locator, 15);
-        el.click();
-        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Clicked on element: " + locator);
-        if (extentTest != null) extentTest.info("Clicked: " + locator);
+        try {
+            WebElement el = waitForVisible(locator, 15);
+            el.click();
+            log.info("Clicked on element: {}", locator);
+            if (extentTest != null) extentTest.info("Clicked: " + locator);
+        } catch (Exception e) {
+            log.error("❌ Failed to click element: {} - {}", locator, e.getMessage());
+            if (extentTest != null) extentTest.info("Failed to click: " + locator);
+            throw e;
+        }
     }
 
     public void type(By locator, String text, ExtentTest extentTest) {
-        WebElement el = waitForVisible(locator, 15);
-        el.clear();
-        el.sendKeys(text);
-        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Typed text '" + text + "' into element: " + locator);
-        if (extentTest != null) extentTest.info("Typed into " + locator + " -> " + text);
+        try {
+            WebElement el = waitForVisible(locator, 15);
+            el.clear();
+            el.sendKeys(text);
+            log.info("Typed '{}' into element: {}", text, locator);
+            if (extentTest != null) extentTest.info("Typed into " + locator + " -> " + text);
+        } catch (Exception e) {
+            log.error("❌ Failed to type '{}' into {} - {}", text, locator, e.getMessage());
+            if (extentTest != null) extentTest.info("Failed to type into " + locator);
+            throw e;
+        }
     }
 
     public String getText(By locator) {
@@ -60,8 +80,7 @@ public class BasePage {
             text = el.getAttribute("content-desc");
         }
         text = (text != null ? text.trim() : "");
-        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Fetched text from element [" + locator + "]: " + text);
-        
+        log.info("Fetched text from [{}]: {}", locator, text);
         return text;
     }
 
@@ -69,57 +88,55 @@ public class BasePage {
         try {
             boolean visible = waitForVisible(locator, 15).isDisplayed();
             String message = "Element " + locator + " is displayed: " + visible;
-            LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), message);
+            log.info(message);
             if (extentTest != null) extentTest.info("✅ " + message);
             return visible;
         } catch (TimeoutException | NoSuchElementException e) {
             String message = "❌ Element " + locator + " is NOT displayed";
-            LoggerUtil.logError(LoggerUtil.getLogger(getClass()), message);
-            if (extentTest != null) extentTest.fail(message);
+            log.error(message);
+            if (extentTest != null) extentTest.info(message);
             return false;
         }
     }
 
     public String getValidationText(By locator, ExtentTest extentTest) {
-        return getText(locator); // already logs "Fetched text"
+        String text = getText(locator);
+        if (extentTest != null) extentTest.info("Validation text: " + text);
+        return text;
     }
-
 
     // --- Mobile utilities ---
     public void pressEnter(ExtentTest extentTest) {
-        ((AndroidDriver) driver()).pressKey(new KeyEvent(AndroidKey.ENTER));
-        LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Pressed Enter key");
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+        log.info("Pressed Enter key");
         if (extentTest != null) extentTest.info("Pressed Enter");
     }
 
     public String getToastMessage(int timeoutSeconds) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver(), Duration.ofSeconds(timeoutSeconds));
-            WebElement toast = wait.until(ExpectedConditions.presenceOfElementLocated(
-                AppiumBy.xpath("//android.widget.Toast")
-            ));
+            WebElement toast = waitUntil(
+                ExpectedConditions.presenceOfElementLocated(AppiumBy.xpath("//android.widget.Toast")),
+                timeoutSeconds
+            );
             String message = toast.getText();
-            LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Captured Toast: " + message);
+            log.info("Captured Toast: {}", message);
             return message;
         } catch (Exception e) {
-            LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "❌ Failed to capture toast: " + e.getMessage());
+            log.error("❌ Failed to capture toast: {}", e.getMessage());
             return null;
         }
     }
-    
 
     public void scrollToText(String text, ExtentTest extentTest) {
         try {
-            driver().findElement(
-                AppiumBy.androidUIAutomator(
-                    "new UiScrollable(new UiSelector().scrollable(true))"
-                  + ".scrollTextIntoView(\"" + text + "\")"
-                )
-            );
-            LoggerUtil.logInfo(LoggerUtil.getLogger(getClass()), "Scrolled to text: " + text);
+            driver.findElement(AppiumBy.androidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true))"
+              + ".scrollTextIntoView(\"" + text + "\")"
+            ));
+            log.info("Scrolled to text: {}", text);
             if (extentTest != null) extentTest.info("Scrolled to: " + text);
         } catch (Exception e) {
-            LoggerUtil.logError(LoggerUtil.getLogger(getClass()), "Failed to scroll to text: " + text);
+            log.error("❌ Failed to scroll to text: {}", text);
             if (extentTest != null) extentTest.info("Failed to scroll to: " + text);
         }
     }

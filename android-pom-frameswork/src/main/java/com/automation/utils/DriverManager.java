@@ -2,59 +2,59 @@ package com.automation.utils;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import io.appium.java_client.android.options.UiAutomator2Options;
 
 import java.net.URL;
+import java.time.Duration;
 
 public class DriverManager {
-    private static final ThreadLocal<AppiumDriver> tlDriver = new ThreadLocal<>();
+    private static final ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
 
     public static void initDriver() {
+        if (driver.get() != null) {
+            return;
+        }
+
         try {
-            String platform = ConfigReader.get("platform");
-            DesiredCapabilities caps = new DesiredCapabilities();
+            String platform = ConfigReader.getOrDefault("platform", "Android");
+            String deviceName = ConfigReader.getOrDefault("deviceName", "emulator-5554");
+            String automationName = ConfigReader.getOrDefault("automationName", "UiAutomator2");
+            String appiumServer = ConfigReader.getOrDefault("appiumServer", "http://127.0.0.1:4723");
+            String appPackage = ConfigReader.getOrDefault("appPackage", "");
+            String appActivity = ConfigReader.getOrDefault("appActivity", "");
+            boolean noReset = Boolean.parseBoolean(ConfigReader.getOrDefault("noReset", "true"));
+            int implicitWait = Integer.parseInt(ConfigReader.getOrDefault("implicitWait", "10"));
 
-            caps.setCapability("platformName", platform);
-            caps.setCapability("deviceName", ConfigReader.get("deviceName"));
-            caps.setCapability("automationName", ConfigReader.get("automationName"));
-            caps.setCapability("noReset", Boolean.parseBoolean(ConfigReader.get("noReset")));
+            if (platform.equalsIgnoreCase("Android")) {
+                UiAutomator2Options options = new UiAutomator2Options()
+                        .setDeviceName(deviceName)
+                        .setAutomationName(automationName)
+                        .setAppPackage(appPackage)
+                        .setAppActivity(appActivity)
+                        .setNoReset(noReset);
 
-            if ("Android".equalsIgnoreCase(platform)) {
-                caps.setCapability("appPackage", ConfigReader.get("appPackage"));
-                caps.setCapability("appActivity", ConfigReader.get("appActivity"));
-
-                AppiumDriver driver = new AndroidDriver(new URL(ConfigReader.get("appiumServer")), caps);
-                tlDriver.set(driver);
-
-            } else if ("iOS".equalsIgnoreCase(platform)) {
-                AppiumDriver driver = new IOSDriver(new URL(ConfigReader.get("appiumServer")), caps);
-                tlDriver.set(driver);
-
+                AppiumDriver androidDriver = new AndroidDriver(new URL(appiumServer), options);
+                androidDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
+                driver.set(androidDriver);
             } else {
-                throw new IllegalArgumentException("Unsupported platform: " + platform);
+                throw new RuntimeException("❌ Unsupported platform: " + platform);
             }
-
-            getDriver().manage().timeouts().implicitlyWait(
-                java.time.Duration.ofSeconds(ConfigReader.getInt("implicitWait", 10))
-            );
-
         } catch (Exception e) {
-            throw new RuntimeException("Failed to start Appium driver", e);
+            throw new RuntimeException("❌ Failed to initialize driver: " + e.getMessage(), e);
         }
     }
 
     public static AppiumDriver getDriver() {
-        return tlDriver.get();
+        if (driver.get() == null) {
+            initDriver();
+        }
+        return driver.get();
     }
 
     public static void quitDriver() {
-        AppiumDriver driver = tlDriver.get();
-        if (driver != null) {
-            try {
-                driver.quit();
-            } catch (Exception ignored) {}
-            tlDriver.remove();
+        if (driver.get() != null) {
+            driver.get().quit();
+            driver.remove();
         }
     }
 }
